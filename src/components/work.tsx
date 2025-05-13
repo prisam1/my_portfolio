@@ -1,0 +1,88 @@
+import { ScrollAnimation } from "./scrollAnimation";
+
+export const Work = () => {
+  return (
+
+
+    <div className="lg:flex-row flex items-center lg:pt-20 bg-[#0078ff] h-[100vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+      <ScrollAnimation direction="up">
+        <div className="flex flex-col  lg:gap-3 gap-[4px] lg:h-[56vh] lg:w-[50vw] lg:mt-0 mt-4 ">
+          <h1 className="text-black lg:text-2xl lg:mt-2 font-bold">
+            Experience
+          </h1>
+          <div className="">
+
+            <div className="animate-pulse flex flex-row items-center gap-4">
+              <div className="flex items-center flex-col">
+                <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
+              </div>
+              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
+                Atrox Technology Pvt. Ltd.
+              </h1>
+              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
+                (SDE-I)
+              </h1>
+              <span className="text-black lg:text-sm font-bold">
+                Feb 2024 - Dec 2024
+              </span>
+            </div>
+            <h1 className="text-black lg:text-base font-semibold pl-10">
+              Contributed to Android app development with React Native and Expo,
+              focusing on building user-friendly mobile applications. Developed
+              backend systems using Feathers.js to provide a robust API for mobile
+              app functionality. Created the company website using Next.js,
+              ensuring high performance and SEO optimization. Played a key role in
+              implementing intuitive UI/UX design for mobile apps, enhancing user
+              engagement and experience. For a web APP Integrating React.js and
+              Nest.js for building scalable, maintainable applications.
+            </h1>
+            <div className="animate-pulse flex flex-row items-center gap-4">
+              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
+              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
+                Percipience Labs
+              </h1>
+              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
+                (Junior MERN Developer)
+              </h1>
+              <span className="text-black lg:text-sm font-bold">
+                Oct 2023 - Jan 2024
+              </span>
+            </div>
+            <h1 className="text-black lg:text-base font-semibold pl-10">
+              Worked on Android app development using React Native and Ionic
+              frameworks, contributing to the development of multiple
+              applications, including SocialOut, Messaging, Retentive, and a
+              Payment Gateway system and Firebase for authentication. Integrated
+              backend services using Node.js, ensuring smooth communication
+              between the front-end and back-end components. Played a key role in
+              implementing intuitive UI/UX design for mobile apps, enhancing user
+              engagement and experience.
+            </h1>
+            <div className="animate-pulse flex flex-row items-center gap-4">
+              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
+              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
+                FunctionUp
+              </h1>
+              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
+                (Backend Developer Trainee)
+              </h1>
+              <span className="text-black lg:text-sm font-bold">
+                July 2022 - July 2023
+              </span>
+            </div>
+            <h1 className="text-black lg:text-base font-semibold pl-10">
+              Trained in backend development using Node.js and Express, and
+              developed applications with MongoDB for data storage. Worked with
+              AWS S3 for file storage and Redis for caching and performance
+              optimization. Gained hands-on experience with GitHub for version
+              control and collaborated effectively with teams to deliver projects
+              on time. Developed strong problem-solving skills while working on
+              real-world projects.
+            </h1>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+
+  );
+};
