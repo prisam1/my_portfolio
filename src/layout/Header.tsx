@@ -44,7 +44,7 @@ export const Header = () => {
         <img
           src={IMAGES.pritam}
           alt="react"
-          className="lg:w-[50px] lg:h-[50px] w-[100px] h-[100px] lg:mt-0 mt-[50px]  bg-white rounded-full border-2 border-blue-500"
+          className="lg:w-[50px] lg:h-[50px] w-[100px] h-[100px] bg-white rounded-full border-2 border-blue-500"
         />
         <h1 className="text-white text-3xl font-semibold">Portfolio</h1>
       </a>

@@ -48,7 +48,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex items-center bg-lime-600 h-[100vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+    <div className="flex items-center bg-lime-600  h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
 
       <div className=" flex justify-between  bg-white lg:flex-row flex-col rounded-md">
       
