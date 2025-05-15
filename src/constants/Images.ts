@@ -28,5 +28,5 @@ export const IMAGES = {
  pgAdmin :require("../assets/pgAdmin.webp"),
  firebase :require("../assets/firebase.png"),
  
-  }
+}
   

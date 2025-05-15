@@ -1,10 +1,11 @@
-import { ScrollAnimation } from "./scrollAnimation";
+import { ScrollAnimation } from "../../components/ScrollAnimation";
 
-export const Work = () => {
+export const Skill = () => {
   return (
 
 
-    <div className="lg:flex-row flex items-center lg:pt-20 bg-[#0078ff] h-[100vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+    <div className="lg:flex-row flex items-center lg:pt-20 bg-[#0078ff] h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+
       <ScrollAnimation direction="up">
         <div className="flex flex-col  lg:gap-3 gap-[4px] lg:h-[56vh] lg:w-[50vw] lg:mt-0 mt-4 ">
           <h1 className="text-black lg:text-2xl lg:mt-2 font-bold">
