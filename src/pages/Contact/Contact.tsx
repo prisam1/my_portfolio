@@ -48,16 +48,15 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex items-center bg-lime-600  h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
-
+    <div className="flex items-center bg-lime-600 lg:h-[80vh] h-[91vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
       <div className=" flex justify-between  bg-white lg:flex-row flex-col rounded-md">
       
         <form className="lg:shadow-xl shadow-sm lg:p-8 p-4 lg:pt-10 max-w-md w-full" onSubmit={handleSubmit}>
           <h2 className="text-2xl font-bold mb-6 text-center">
             Send A Message
           </h2>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-2">Name</label>
+          <div className="mb-3">
+            <label className="block text-gray-700 font-medium mb-1">Name</label>
             <input
               type="text"
               name="name"
@@ -67,8 +66,8 @@ export const Contact = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-2">
+          <div className="mb-3">
+            <label className="block text-gray-700 font-medium mb-1">
               Email
             </label>
             <input
@@ -80,8 +79,8 @@ export const Contact = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-2">
+          <div className="mb-3">
+            <label className="block text-gray-700 font-medium mb-1">
               Subject
             </label>
             <input
@@ -93,8 +92,8 @@ export const Contact = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-2">
+          <div className="mb-3">
+            <label className="block text-gray-700 font-medium mb-1">
               Message
             </label>
             <textarea
@@ -114,7 +113,7 @@ export const Contact = () => {
           </button>
         </form>
         <div className="lg:p-10 p-3">
-          <h1 className="text-black lg:text-2xl lg:mt-0 mt-4 font-bold border-b-2 border-blue-700">
+          <h1 className="text-black lg:text-2xl lg:mt-0 mt-1 font-bold border-b-2 border-blue-700">
             Get in Touch
           </h1>
           <h1 className="lg:mt-10 mt-4 font-sans lg:text-lg md:text-xs lg:font-semibold">
