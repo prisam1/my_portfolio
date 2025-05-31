@@ -27,6 +27,10 @@ export const IMAGES = {
  noSql :require("../assets/nosql.png"),
  pgAdmin :require("../assets/pgAdmin.webp"),
  firebase :require("../assets/firebase.png"),
+
+ // project image
+
+ 
  
 }
   

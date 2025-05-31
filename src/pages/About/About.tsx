@@ -83,10 +83,10 @@ export const About = () => {
 
 
   return (
-    <div className="lg:h-[90vh] h-[90vh]">
-      <canvas ref={canvasRef} className="absolute z-0" />
+    <div className="h-[90vh]">
+      <canvas ref={canvasRef} className="absolute z-0 w-full" />
       <motion.div
-        className="relative z-10 text-white flex flex-col lg:px-10 lg:py-10 px-[16px] py-[40px]"
+        className="relative z-10 text-white flex flex-col lg:px-0 lg:py-10 px-[16px] py-[40px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
@@ -105,7 +105,7 @@ export const About = () => {
             />
 
             <div className="max-w-2xl">
-              <h1 className=" lg:text-2xl lg:mt-2 font-bold">
+              <h1 className="lg:text-2xl lg:mt-2 font-bold">
                 I'm Pritam Kumar Samaddar
               </h1>
               <h1 className="lg:text-lg lg:mt-2 font-bold text-purple-600">

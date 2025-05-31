@@ -8,7 +8,7 @@ export const Skills = () => {
   return (
 
     //  <div ref={vantaRef} className="flex flex-col lg:justify-between items-center bg-purple-600 h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[40px]">
-    <div className="relative w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-950 via-purple-500 to-indigo-700">
+    <div className="flex flex-col items-center h-[100vh] justify-center bg-gradient-to-br from-slate-950 via-purple-500 to-indigo-700">
 
       <StarryNetworkBackground />
 
@@ -17,7 +17,7 @@ export const Skills = () => {
           Skills
         </h1>
       </ScrollAnimation>
-      <div className="flex flex-row lg:px-10 lg:py-0 px-[16px] py-[40px] ">
+      <div className="flex flex-row lg:mt-10 lg:px-10 lg:py-0 px-[16px] py-[40px] ">
         {/* <ReactAnimation/> */}
 
         <ScrollAnimation direction="up">
