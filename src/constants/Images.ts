@@ -28,9 +28,12 @@ export const IMAGES = {
  pgAdmin :require("../assets/pgAdmin.webp"),
  firebase :require("../assets/firebase.png"),
 
- // project image
-
- 
- 
+ // projects
+ feedTask :require("../assets/project/feedTask.png"), 
+ todo :require("../assets/project/todo.png"), 
+ hoichoi :require("../assets/project/hoichoi.png"), 
+ imgSearch :require("../assets/project/imageSearch.png"), 
+ reactApp :require("../assets/project/react.png"), 
+ url :require("../assets/project/urlShortener.png"), 
 }
   
