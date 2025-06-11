@@ -34,7 +34,7 @@ export const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [activeLink]);
+  }, [activeLink, handleScroll]);
 
   return (
     <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center">
