@@ -26,7 +26,9 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <h2 className="text-black text-lg font-bold text-center">
           {project.title}
         </h2>
-        <p className="text-sm text-gray-700 text-center">{project.description}</p>
+        <p className="text-sm text-gray-700 text-center"> {project.description.length > 250
+          ? project.description.slice(0, 260) + "..."
+          : project.description}</p>
         <div className="flex gap-4 mt-2">
           <a
             href={project.github}
