@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Download } from "lucide-react";
 import { IMAGES } from "../constants/Images";
 
@@ -14,7 +14,7 @@ const navLinks = [
 export const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
     const offsets = navLinks.map(({ id }) => {
       const el = document.getElementById(id);
@@ -29,12 +29,13 @@ export const Header = () => {
     if (current && current.id !== activeLink) {
       setActiveLink(current.id);
     }
-  };
+  }, [activeLink]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [activeLink, handleScroll]);
+  }, [handleScroll]);
+
 
   return (
     <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center">
