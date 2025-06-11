@@ -37,11 +37,11 @@ export const Header = () => {
   }, [activeLink]);
 
   return (
-    <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:pr-20 justify-between items-center">
+    <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center">
       <a
         href="#home"
         onClick={() => setActiveLink("home")}
-        className="lg:flex flex-row items-center gap-2 pl-4 hidden md:block"
+        className="lg:flex flex-row items-center gap-2 hidden md:block"
       >
         <img
           src={IMAGES.pritam}
