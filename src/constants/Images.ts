@@ -35,5 +35,7 @@ export const IMAGES = {
  imgSearch :require("../assets/project/imageSearch.png"), 
  reactApp :require("../assets/project/react.png"), 
  url :require("../assets/project/urlShortener.png"), 
+ news :require("../assets/project/news.png"), 
+ itinerary:require("../assets/project/itinerary.png")
 }
   

@@ -13,7 +13,7 @@ export const ScrollAnimation = ({
   direction = "up",
   delay = 0,
 }: ScrollAnimationProps) => {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const variants = {
     hidden: {

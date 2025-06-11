@@ -1,4 +1,4 @@
-import { ExternalLink, } from "lucide-react"; 
+import { ExternalLink, Github } from "lucide-react";
 import { Project } from "../pages/Work/Work";
 
 interface ProjectCardProps {
@@ -34,7 +34,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             rel="noopener noreferrer"
             className="bg-black text-white px-4 py-2 rounded-lg text-sm flex items-center gap-2 hover:bg-gray-900 transition"
           >
-            {/* <Github size={16} /> GitHub */}
+            <Github size={16} /> GitHub
           </a>
           <a
             href={project.live}

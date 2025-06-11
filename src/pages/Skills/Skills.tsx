@@ -1,7 +1,7 @@
 import { ScrollAnimation } from "../../components/ScrollAnimation";
 import { IMAGES } from "../../constants/Images";
 import StarryNetworkBackground from "../../components/StarBackground";
-import ReactAnimation from "../../components/ReactAnimation";
+//import ReactAnimation from "../../components/ReactAnimation";
 
 export const Skills = () => {
 
