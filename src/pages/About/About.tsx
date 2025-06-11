@@ -1,7 +1,8 @@
-import { ScrollAnimation } from "../../components/ScrollAnimation";
+ 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IMAGES } from "../../constants/Images";
+import { ScrollAnimation } from "../../components/ScrollAnimation";
 
 export const About = () => {
 
