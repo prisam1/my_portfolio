@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Download } from "lucide-react";
-import { IMAGES } from "../constants/Images";
+// import { useState, useEffect } from "react";
+// import { Download } from "lucide-react";
+// import { IMAGES } from "../constants/Images";
 
 
 
