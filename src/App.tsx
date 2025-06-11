@@ -1,9 +1,11 @@
 import { About } from "./pages/About/About";
 import { Header } from "./layout/Header";
 import { Intro } from "./pages/Intro/Intro";
-import { Work } from "./pages/Experience/Work";
+import { Experience } from "./pages/Experience/Experience";
 import { Contact } from "./pages/Contact/Contact";
 import { Bottom } from "./layout/Bottom";
+import { Skills } from "./pages/Skills/Skills";
+import { Work } from "./pages/Work/Work";
 
 function App() {
   return (
@@ -20,6 +22,14 @@ function App() {
         <About />
       </section>
 
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
       <section id="work">
         <Work />
       </section>
@@ -28,7 +38,7 @@ function App() {
         <Contact />
       </section>
 
-      <Bottom/>
+      <Bottom />
     </div>
   );
 }

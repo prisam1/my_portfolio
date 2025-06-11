@@ -5,7 +5,9 @@ import { IMAGES } from "../constants/Images";
 const navLinks = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "work", label: "Work" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "work", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -39,16 +41,16 @@ export const Header = () => {
       <a
         href="#home"
         onClick={() => setActiveLink("home")}
-        className="flex flex-row items-center gap-2 pl-4"
+        className="lg:flex flex-row items-center gap-2 pl-4 hidden md:block"
       >
         <img
           src={IMAGES.pritam}
           alt="react"
-          className="lg:w-[50px] lg:h-[50px] w-[100px] h-[100px] bg-white rounded-full border-2 border-blue-500"
+          className="lg:w-[50px] lg:h-[50px] bg-white rounded-full lg:border-2  border-blue-500"
         />
-        <h1 className="text-white text-3xl font-semibold">Portfolio</h1>
+        <h1 className="text-white lg:text-3xl font-semibold">Portfolio</h1>
       </a>
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-row gap-5 lg:min-w-0 min-w-full justify-center">
         {navLinks.map(({ id, label }) => (
           <a
             key={id}
@@ -63,7 +65,7 @@ export const Header = () => {
       </div>
       <button
         onClick={() => window.open("/Pritam_resume.pdf", "_blank")}
-        className="animate-bounce flex flex-col text-white items-center"
+        className="animate-bounce lg:flex flex-col text-white items-center hidden md:block"
       >
         <Download size={40} absoluteStrokeWidth={true} />
         Download Resume

@@ -58,7 +58,7 @@ import { ScrollAnimation } from "../../components/ScrollAnimation";
 const introdata = {
   animated: {
     first: "Full Stack Developer",
-    second: "Android Developer",
+    second: "Android App Developer",
     third: "React.js Developer",
     fourth: "Node.js Developer",
   },
@@ -106,11 +106,11 @@ export const Intro = () => {
             />
 
             <h1 className="text-white lg:text-7xl text-2xl font-bold mt-10">
-              Hello, I am Pritam Kumar Samaddar
+              Hello, I'm Pritam Kumar Samaddar
             </h1>
 
-            <span className="flex flex-row h-10 text-4xl font-semibold my-8 text-purple-700">
-              <p className="text-4xl font-semibold text-white pr-[8px]">I am a</p>
+            <span className="flex flex-row h-10 lg:text-4xl text-[18px] font-semibold my-8 text-purple-700">
+              <p className="lg:text-4xl text-base font-semibold text-white pr-[8px]">I am a</p>
               <Typewriter
                 options={{
                   strings: [

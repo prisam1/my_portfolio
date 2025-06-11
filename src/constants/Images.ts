@@ -27,6 +27,15 @@ export const IMAGES = {
  noSql :require("../assets/nosql.png"),
  pgAdmin :require("../assets/pgAdmin.webp"),
  firebase :require("../assets/firebase.png"),
- 
+
+ // projects
+ feedTask :require("../assets/project/feedTask.png"), 
+ todo :require("../assets/project/todo.png"), 
+ hoichoi :require("../assets/project/hoichoi.png"), 
+ imgSearch :require("../assets/project/imageSearch.png"), 
+ reactApp :require("../assets/project/react.png"), 
+ url :require("../assets/project/urlShortener.png"), 
+ news :require("../assets/project/news.png"), 
+ itinerary:require("../assets/project/itinerary.png")
 }
   

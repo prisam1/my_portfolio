@@ -1,88 +1,165 @@
 import { ScrollAnimation } from "../../components/ScrollAnimation";
+import { IMAGES } from "../../constants/Images";
+import StarryNetworkBackground from "../../components/StarBackground";
+//import ReactAnimation from "../../components/ReactAnimation";
 
-export const Skill = () => {
+export const Skills = () => {
+
   return (
 
+    //  <div ref={vantaRef} className="flex flex-col lg:justify-between items-center bg-purple-600 h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[40px]">
+    <div className="flex flex-col items-center h-[100vh] justify-center bg-gradient-to-br from-slate-950 via-purple-500 to-indigo-700">
 
-    <div className="lg:flex-row flex items-center lg:pt-20 bg-[#0078ff] h-[90vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+      <StarryNetworkBackground />
 
       <ScrollAnimation direction="up">
-        <div className="flex flex-col  lg:gap-3 gap-[4px] lg:h-[56vh] lg:w-[50vw] lg:mt-0 mt-4 ">
-          <h1 className="text-black lg:text-2xl lg:mt-2 font-bold">
-            Experience
-          </h1>
-          <div className="">
-
-            <div className="animate-pulse flex flex-row items-center gap-4">
-              <div className="flex items-center flex-col">
-                <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
-              </div>
-              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
-                Atrox Technology Pvt. Ltd.
-              </h1>
-              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
-                (SDE-I)
-              </h1>
-              <span className="text-black lg:text-sm font-bold">
-                Feb 2024 - Dec 2024
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base font-semibold pl-10">
-              Contributed to Android app development with React Native and Expo,
-              focusing on building user-friendly mobile applications. Developed
-              backend systems using Feathers.js to provide a robust API for mobile
-              app functionality. Created the company website using Next.js,
-              ensuring high performance and SEO optimization. Played a key role in
-              implementing intuitive UI/UX design for mobile apps, enhancing user
-              engagement and experience. For a web APP Integrating React.js and
-              Nest.js for building scalable, maintainable applications.
-            </h1>
-            <div className="animate-pulse flex flex-row items-center gap-4">
-              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
-              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
-                Percipience Labs
-              </h1>
-              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
-                (Junior MERN Developer)
-              </h1>
-              <span className="text-black lg:text-sm font-bold">
-                Oct 2023 - Jan 2024
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base font-semibold pl-10">
-              Worked on Android app development using React Native and Ionic
-              frameworks, contributing to the development of multiple
-              applications, including SocialOut, Messaging, Retentive, and a
-              Payment Gateway system and Firebase for authentication. Integrated
-              backend services using Node.js, ensuring smooth communication
-              between the front-end and back-end components. Played a key role in
-              implementing intuitive UI/UX design for mobile apps, enhancing user
-              engagement and experience.
-            </h1>
-            <div className="animate-pulse flex flex-row items-center gap-4">
-              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
-              <h1 className="text-black lg:text-xl lg:mt-2 font-bold">
-                FunctionUp
-              </h1>
-              <h1 className="text-black lg:text-xl lg:mt-2 font-semibold">
-                (Backend Developer Trainee)
-              </h1>
-              <span className="text-black lg:text-sm font-bold">
-                July 2022 - July 2023
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base font-semibold pl-10">
-              Trained in backend development using Node.js and Express, and
-              developed applications with MongoDB for data storage. Worked with
-              AWS S3 for file storage and Redis for caching and performance
-              optimization. Gained hands-on experience with GitHub for version
-              control and collaborated effectively with teams to deliver projects
-              on time. Developed strong problem-solving skills while working on
-              real-world projects.
-            </h1>
-          </div>
-        </div>
+        <h1 className="text-white lg:text-4xl font-bold ">
+          Skills
+        </h1>
       </ScrollAnimation>
+      <div className="flex flex-row lg:mt-10 lg:px-10 lg:py-0 px-[16px] py-[40px] ">
+        {/* <ReactAnimation/> */}
+
+        <ScrollAnimation direction="up">
+          <div className="flex flex-wrap lg:gap-3 gap-[4px] lg:h-[56vh] lg:w-[50vw] lg:mt-0 mt-4 ">
+            <img
+              src={IMAGES.react}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:py-4 lg:px-2 py-2 px-1"
+            />
+            <img
+              src={IMAGES.native}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.mongo}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 p-1.5"
+            />
+            <img
+              src={IMAGES.javascript}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:px-2 px-1"
+            />
+            <img
+              src={IMAGES.typescript}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:px-2 lg:py-6 px-1 py-3"
+            />
+            <img
+              src={IMAGES.feathers}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:py-4 py-1"
+            />
+            <img
+              src={IMAGES.postgres}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2"
+            />
+            <img
+              src={IMAGES.expo}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.ionic}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 lg:py-4 p-1"
+            />
+            <img
+              src={IMAGES.express}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 p-1"
+            />
+            <img
+              src={IMAGES.nest}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 p-1"
+            />
+            <img
+              src={IMAGES.next}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 p-1"
+            />
+            <img
+              src={IMAGES.python}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.cLanguage}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.aws}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:py-2"
+            />
+            <img
+              src={IMAGES.firebase}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.postman}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:p-2 p-1"
+            />
+            <img
+              src={IMAGES.vscode}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.tailwind}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.redis}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:px-2 lg:py-2 p-1"
+            />
+            <img
+              src={IMAGES.redux}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:px-2 lg:py-2 p-1"
+            />
+            <img
+              src={IMAGES.html}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.sql}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:py-2 p-1"
+            />
+            <img
+              src={IMAGES.noSql}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.pgAdmin}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+            <img
+              src={IMAGES.git}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg lg:px-2 lg:py-2 p-1"
+            />
+            <img
+              src={IMAGES.github}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[62px] h-[40px] bg-white rounded-lg"
+            />
+          </div>
+        </ScrollAnimation>
+      </div>
     </div>
 
   );
