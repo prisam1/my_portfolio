@@ -84,7 +84,7 @@ export const About = () => {
 
 
   return (
-    <div className="h-[90vh]">
+    <div className="lg:h-[90vh] h-[95vh]">
       <canvas ref={canvasRef} className="absolute z-0 w-full" />
       <motion.div
         className="relative z-10 text-white flex flex-col lg:px-0 lg:py-10 px-[16px] py-[40px]"
@@ -106,13 +106,13 @@ export const About = () => {
             />
 
             <div className="max-w-2xl">
-              <h1 className="lg:text-2xl lg:mt-2 font-bold">
+              <h1 className="lg:text-2xl lg:mt-2 mt-6 font-bold">
                 I'm Pritam Kumar Samaddar
               </h1>
               <h1 className="lg:text-lg lg:mt-2 font-bold text-purple-600">
                 Full Stack Developer
               </h1>
-              <h1 className="lg:mt-10 mt-4 font-sans lg:text-lg md:text-xs  lg:font-semibold">
+              <h1 className="lg:mt-10 mt-4 font-sans lg:text-lg md:text-xs lg:font-semibold">
                 I am a passionate and results-driven full-stack developer with
                 expertise in modern technologies, including MERN (MongoDB, Express.js,
                 React, Node.js), Nest.js, Next.js, and React Native, paired with Expo
