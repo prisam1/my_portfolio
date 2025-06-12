@@ -1,54 +1,4 @@
-// import Typewriter from "typewriter-effect";
-// import { IMAGES } from "../constants/Images";
-// import { ScrollAnimation } from "./scrollAnimation";
-
-// const introdata = {
-//   animated: {
-//     first: "Full Stack Developer",
-//     second: "Android Developer" , 
-//     third: "React.js Developer",
-//     fourth: "Node.js Developer",
-//   },
-// };
-
-// export const Intro = () => {
-//   return (
-//  <div className="flex items-center justify-center bg-slate-950 h-[100vh]">
-//       <ScrollAnimation direction="up">
-//         <div className="flex flex-col items-center justify-center text-center">
-//           <img
-//             src={IMAGES.pritam}
-//             alt="pritam"
-//             className="lg:w-[250px] lg:h-[250px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-blue-500"
-//           />
-
-//           <h1 className="text-white lg:text-7xl text-2xl font-bold mt-10">
-//             Hello, I am Pritam Kumar Samaddar
-//           </h1>
-
-//           <span className="flex flex-row h-10 text-4xl  font-semibold my-8 text-purple-700">
-//           <p className="text-4xl font-semibold text-white pr-[8px]">I am a</p>
-//             <Typewriter
-//               options={{
-//                 strings: [
-//                   introdata.animated.first,
-//                   introdata.animated.second,
-//                   introdata.animated.third,
-//                   introdata.animated.fourth
-//                 ],
-//                 autoStart: true,
-//                 loop: true,
-//                 deleteSpeed: 10,
-//               }}
-//             />
-//           </span>
-//         </div>
-//       </ScrollAnimation>
-//     </div>
-//   );
-// };
-
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 //@ts-ignore
 import FOG from "vanta/src/vanta.clouds";
@@ -56,7 +6,7 @@ import Typewriter from "typewriter-effect";
 import { IMAGES } from "../../constants/Images";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
 
-const introdata = {
+const introData = {
   animated: {
     first: "Full Stack Developer",
     second: "Android App Developer",
@@ -115,10 +65,10 @@ export const Intro = () => {
               <Typewriter
                 options={{
                   strings: [
-                    introdata.animated.first,
-                    introdata.animated.second,
-                    introdata.animated.third,
-                    introdata.animated.fourth
+                    introData.animated.first,
+                    introData.animated.second,
+                    introData.animated.third,
+                    introData.animated.fourth
                   ],
                   autoStart: true,
                   loop: true,

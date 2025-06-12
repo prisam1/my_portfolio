@@ -38,7 +38,7 @@ export const Header = () => {
 
 
   return (
-    <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center">
+    <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center z-30">
       <a
         href="#home"
         onClick={() => setActiveLink("home")}
@@ -57,7 +57,7 @@ export const Header = () => {
             key={id}
             href={`#${id}`}
             onClick={() => setActiveLink(id)}
-            className={`nav-link lg:text-2xl group transition-colors ${activeLink === id ? "text-purple-600" : "text-white"
+            className={`nav-link lg:text-2xl text-sm group transition-colors ${activeLink === id ? "text-purple-600" : "text-white"
               } hover:text-purple-500`}
           >
             {label}
