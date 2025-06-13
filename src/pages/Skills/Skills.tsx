@@ -15,11 +15,11 @@ export const Skills = () => {
         <StarryNetworkBackground />
       </div>
 
-     <ScrollAnimation direction="up">
+      <ScrollAnimation direction="up">
         <h1 className="text-white lg:text-4xl font-bold mt-10 z-20">
           Skills
         </h1>
-      </ScrollAnimation> 
+      </ScrollAnimation>
       <div className="flex flex-row lg:mt-14 lg:px-10 lg:py-0 px-[16px] py-[40px] z-20 h-full">
         {/* <ReactAnimation/> */}
 
