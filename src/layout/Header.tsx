@@ -38,7 +38,7 @@ export const Header = () => {
 
 
   return (
-    <div className="flex bg-slate-950 lg:h-[10vh] h-[5vh] lg:px-7 px-3 justify-between items-center z-30">
+    <div className="flex bg-slate-950 lg:h-[95.5px] h-[44.5px] lg:px-7 px-3 justify-between items-center z-30">
       <a
         href="#home"
         onClick={() => setActiveLink("home")}

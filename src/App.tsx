@@ -18,19 +18,19 @@ function App() {
         <Intro />
       </section>
 
-      <section className="lg:scroll-mt-24 scroll-mt-11" id="about">
+      <section className="lg:scroll-mt-24 scroll-mt-[44.5px]" id="about">
         <About />
       </section>
 
-      <section className="lg:scroll-mt-24 scroll-mt-11" id="skills">
+      <section className="lg:scroll-mt-24 scroll-mt-[43px]" id="skills">
         <Skills />
       </section>
 
-      <section className="lg:scroll-mt-24 scroll-mt-11" id="experience">
+      <section className="lg:scroll-mt-24 scroll-mt-[43px]" id="experience">
         <Experience />
       </section>
 
-      <section className="lg:scroll-mt-24 scroll-mt-11" id="work">
+      <section className="lg:scroll-mt-24 scroll-mt-[43px]" id="work">
         <Work />
       </section>
 
