@@ -2,20 +2,20 @@ import { ScrollAnimation } from "../../components/ScrollAnimation";
 
 export const Experience = () => {
   return (
-    <div className="lg:flex-row flex lg:pt-20 bg-[#0078ff] h-[90vh] w-[100%] lg:px-10 lg:py-0 px-[16px] py-[16px]">
-      {/* <ScrollAnimation direction="up">
-        <h1 className="text-white lg:text-4xl font-bold ">
-        Experience
+    <div className="flex-col flex lg:pt-10 pt-10 lg:h-[90vh] h-[95vh] bg-[#0078ff] min-h-screen w-[100%] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+      <ScrollAnimation direction="up">
+        <h1 className="text-white text-center lg:text-4xl font-bold ">
+          Experience
         </h1>
-      </ScrollAnimation> */}
+      </ScrollAnimation>
       <ScrollAnimation direction="up">
 
         <div className="flex flex-col  lg:gap-3 gap-[4px]  lg:mt-0 mt-4 ">
-          <h1 className="text-black lg:text-4xl text-center lg:mt-2 font-bold">
+          {/* <h1 className="text-black lg:text-4xl text-center lg:mt-2 font-bold">
             Experience
-          </h1>
+          </h1> */}
 
-          <div className=" lg:h-[56vh] mt-10">
+          <div className=" lg:h-[56vh] lg:mt-10">
 
             <div className="animate-pulse flex flex-row items-center lg:gap-4 gap-2">
               <div className="flex items-center flex-col">
