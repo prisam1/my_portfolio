@@ -14,23 +14,23 @@ function App() {
         <Header />
       </div>
 
-      <section id="home">
+      <section className="scroll-mt-24" id="home">
         <Intro />
       </section>
 
-      <section id="about">
+      <section className="scroll-mt-24" id="about">
         <About />
       </section>
 
-      <section id="skills">
+      <section className="scroll-mt-24" id="skills">
         <Skills />
       </section>
 
-      <section id="experience">
+      <section className="scroll-mt-24" id="experience">
         <Experience />
       </section>
 
-      <section id="work">
+      <section className="scroll-mt-24" id="work">
         <Work />
       </section>
 
