@@ -46,39 +46,37 @@ export const Intro = () => {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="w-full">
-      <div className="flex items-center justify-center min-h-screen">
-        <ScrollAnimation direction="up">
-          <div className="flex flex-col items-center justify-center text-center z-10 relative">
-            <img
-              src={IMAGES.pritam}
-              alt="pritam"
-              className="lg:w-[250px] lg:h-[250px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-blue-500"
+    <div ref={vantaRef} className="flex items-center justify-center min-h-screen">
+      <ScrollAnimation direction="up">
+        <div className="flex flex-col items-center justify-center text-center z-10 relative">
+          <img
+            src={IMAGES.pritam}
+            alt="pritam"
+            className="lg:w-[250px] lg:h-[250px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-blue-500"
+          />
+
+          <h1 className="text-white lg:text-7xl text-2xl font-bold mt-10">
+            Hello, I'm Pritam Kumar Samaddar
+          </h1>
+
+          <span className="flex flex-row h-10 lg:text-4xl text-[18px] font-semibold my-8 text-purple-700">
+            <p className="lg:text-4xl text-base font-semibold text-white pr-[8px]">I am a</p>
+            <Typewriter
+              options={{
+                strings: [
+                  introData.animated.first,
+                  introData.animated.second,
+                  introData.animated.third,
+                  introData.animated.fourth
+                ],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 10,
+              }}
             />
-
-            <h1 className="text-white lg:text-7xl text-2xl font-bold mt-10">
-              Hello, I'm Pritam Kumar Samaddar
-            </h1>
-
-            <span className="flex flex-row h-10 lg:text-4xl text-[18px] font-semibold my-8 text-purple-700">
-              <p className="lg:text-4xl text-base font-semibold text-white pr-[8px]">I am a</p>
-              <Typewriter
-                options={{
-                  strings: [
-                    introData.animated.first,
-                    introData.animated.second,
-                    introData.animated.third,
-                    introData.animated.fourth
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 10,
-                }}
-              />
-            </span>
-          </div>
-        </ScrollAnimation>
-      </div>
+          </span>
+        </div>
+      </ScrollAnimation>
     </div>
   );
 };

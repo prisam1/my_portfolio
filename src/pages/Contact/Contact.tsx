@@ -48,7 +48,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex items-center bg-lime-600 lg:h-[80vh] h-[91vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+    <div className="flex items-center bg-lime-600 lg:h-[80vh] h-[85vh] lg:px-10 lg:py-0 px-[16px] py-[16px]">
       <div className=" flex justify-between  bg-white lg:flex-row flex-col rounded-md">
       
         <form className="lg:shadow-xl shadow-sm lg:p-8 p-4 lg:pt-10 max-w-md w-full" onSubmit={handleSubmit}>
