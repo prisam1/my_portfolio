@@ -1,4 +1,4 @@
- 
+
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IMAGES } from "../../constants/Images";
@@ -84,7 +84,7 @@ export const About = () => {
 
 
   return (
-    <div className="lg:h-[90vh] h-[95vh]">
+    <div className="lg:h-[90vh] h-[85vh]">
       <canvas ref={canvasRef} className="absolute z-0 w-full" />
       <motion.div
         className="relative z-10 text-white flex flex-col lg:px-0 lg:py-10 px-[16px] py-[40px]"
