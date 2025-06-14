@@ -2,7 +2,7 @@ import { ScrollAnimation } from "../../components/ScrollAnimation";
 
 export const Experience = () => {
   return (
-    <div className="flex-col flex lg:pt-10 pt-10 lg:h-[90vh] h-[95vh] bg-[#0078ff] min-h-screen w-[100%] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+    <div className="flex-col flex lg:pt-10 pt-10 lg:h-[90vh] h-[95vh] bg-[#0078ff] w-[100%] lg:px-10 lg:py-0 px-[16px] py-[16px]">
       <ScrollAnimation direction="up">
         <h1 className="text-white text-center lg:text-4xl font-bold ">
           Experience

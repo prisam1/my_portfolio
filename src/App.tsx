@@ -18,7 +18,7 @@ function App() {
         <Intro />
       </section>
 
-      <section className="lg:scroll-mt-24 scroll-mt-[44.5px]" id="about">
+      <section className="lg:scroll-mt-24 scroll-mt-[43px]" id="about">
         <About />
       </section>
 
