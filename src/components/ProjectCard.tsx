@@ -3,11 +3,12 @@ import { Project } from "../pages/Work/Work";
 
 interface ProjectCardProps {
   project: Project;
+  onClick: () => void;
 }
 
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
-    <div className="group perspective-1000 max-w-md w-full mx-auto">
+    <div onClick={onClick} className="group perspective-1000 max-w-md w-full mx-auto">
       <div
         className="
           bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]
@@ -19,9 +20,9 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={project.img}
           alt={project.title}
-          width={320}
+          // width={320}
           height={180}
-          className="rounded-xl object-cover"
+          className="w-full rounded-xl object-cover"
         />
         <h2 className="text-black text-lg font-bold text-center">
           {project.title}
@@ -29,6 +30,19 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <p className="text-sm text-gray-700 text-center"> {project.description.length > 250
           ? project.description.slice(0, 260) + "..."
           : project.description}</p>
+
+        {/* Tech stack preview */}
+        <div className="flex flex-wrap justify-center gap-2 mt-2">
+          {project.tech.slice(0, 5).map((tech, index) => (
+            <span
+              key={index}
+              className="bg-gray-200 text-sm text-gray-800 px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
         <div className="flex gap-4 mt-2">
           <a
             href={project.github}
