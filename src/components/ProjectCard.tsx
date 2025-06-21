@@ -14,7 +14,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
         bg-gray-300 rounded-2xl group-hover:shadow-2xl
         transition-all duration-300 ease-in-out transform
         group-hover:-translate-y-2 group-hover:scale-[1.05]
-        px-6 py-6 flex flex-col items-center gap-4
+        px-5 py-5 flex flex-col items-center gap-4
         "
       >
         <img
@@ -28,7 +28,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
           {project.title}
         </h2>
         <p className="text-sm text-gray-700 text-center"> {project.description.length > 250
-          ? project.description.slice(0, 260) + "..."
+          ? project.description.slice(0, 270) + "..."
           : project.description}</p>
 
         {/* Tech stack preview */}
