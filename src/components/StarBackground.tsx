@@ -50,7 +50,7 @@ export default function StarryNetworkBackground() {
         <ambientLight intensity={0.5} />
         {/* @ts-ignore */}
         <pointLight position={[10, 10, 10]} />
-        <Stars radius={100} depth={50} count={5000} factor={5} fade speed={1} />
+        <Stars radius={100} depth={60} count={5000} factor={5} fade speed={10} />
         {/* <RotatingGlobe />
          <OrbitLines /> */}
         <OrbitControls
@@ -58,7 +58,7 @@ export default function StarryNetworkBackground() {
           enableRotate={false}
           enablePan={false}
           autoRotate
-          autoRotateSpeed={0.3} />
+          autoRotateSpeed={0.1} />
       </Canvas> 
   )
 }
