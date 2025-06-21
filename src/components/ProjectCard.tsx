@@ -8,13 +8,13 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
-    <div onClick={onClick} className="group perspective-1000 max-w-md w-full mx-auto">
+    <div onClick={onClick} className="group perspective-1000 hover:cursor-pointer max-w-md w-full mx-auto">
       <div
         className="
-          bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]
-          transition-all duration-300 ease-in-out transform
-          group-hover:-translate-y-2 group-hover:rotate-1
-          hover:opacity-95 px-6 py-6 flex flex-col items-center gap-4
+        bg-gray-300 rounded-2xl group-hover:shadow-2xl
+        transition-all duration-300 ease-in-out transform
+        group-hover:-translate-y-2 group-hover:scale-[1.05]
+        px-6 py-6 flex flex-col items-center gap-4
         "
       >
         <img
@@ -32,11 +32,11 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
           : project.description}</p>
 
         {/* Tech stack preview */}
-        <div className="flex flex-wrap justify-center gap-2 mt-2">
+        <div className="flex flex-wrap justify-center gap-2 mt-2 ">
           {project.tech.slice(0, 5).map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 text-sm text-gray-800 px-2 py-1 rounded-full"
+              className="bg-gray-400 text-sm text-gray-900 px-2 py-1 rounded-full"
             >
               {tech}
             </span>

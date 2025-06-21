@@ -138,14 +138,14 @@ export const Header = () => {
             key={id}
             href={`#${id}`}
             onClick={() => handleNavClick(id)}
-            className={`relative text-white text-lg hover:text-purple-400 transition duration-300 
-              ${activeLink === id ? "text-purple-500 font-bold" : ""}
+            className={`relative text-lg hover:text-purple-400 transition duration-300 
+              ${activeLink === id ? "text-purple-500 font-bold" : "text-white"}
             `}
           >
             {label}
-            {activeLink === id && (
+            {/* {activeLink === id && (
               <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-purple-500"></span>
-            )}
+            )} */}
           </a>
         ))}
       </nav>
