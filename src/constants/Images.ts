@@ -36,6 +36,8 @@ export const IMAGES = {
  reactApp :require("../assets/project/react.png"), 
  url :require("../assets/project/urlShortener.png"), 
  news :require("../assets/project/news.png"), 
- itinerary:require("../assets/project/itinerary.png")
+ itinerary:require("../assets/project/itinerary.png"),
+ randomImg:require("../assets/project/randomImg.png")
+ 
 }
   
