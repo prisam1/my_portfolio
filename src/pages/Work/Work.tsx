@@ -93,6 +93,15 @@ export const Work = () => {
       live: "https://transcendent-begonia-e26adf.netlify.app/",
       tech: ["React.Js", "SCSS", "Redux"]
     },
+    {
+      id: 7,
+      img: IMAGES.randomImg,
+      title: "React App",
+      description: "This React app will generate random image every time who visit or refresh the page and able to share the image on Twitter, Whatsapp and Facebook and also able to see preview of that image.",
+      github: "https://github.com/prisam1/Pritam_Kumar_Samaddar.git",
+      live: "https://rdmimg.netlify.app/",
+      tech: ["React.Js", "CSS", "Axios"]
+    },
   ];
 
   return (
