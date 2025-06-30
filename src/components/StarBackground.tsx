@@ -1,47 +1,5 @@
 import { Canvas } from "@react-three/fiber";
 import { Stars, OrbitControls } from "@react-three/drei";
-// import { useRef, useMemo } from "react";
-// import * as THREE from "three";
-
-// function RotatingGlobe() {
-//   const meshRef = useRef<THREE.Mesh>(null);
-
-//   useFrame((_, delta) => {
-//     if (meshRef.current) {
-//       meshRef.current.rotation.y += delta * 0.1;
-//     }
-//   });
-
-//   return (
-//     // @ts-ignore
-//     <mesh ref={meshRef}>
-
-//       {/* @ts-ignore */}
-//       <sphereGeometry args={[1.8, 32, 32]} />
-
-//       {/* @ts-ignore */}
-//       <meshBasicMaterial wireframe color="#7c3aed" />
-
-//       {/* @ts-ignore */}
-//     </mesh>
-//   );
-// }
-
-// function OrbitLines() {
-//   const lines = useMemo(() => {
-//     const linesArray = [];
-//     for (let i = 0; i < 5; i++) {
-//       const points = [];
-//       const radius = 2 + i * 0.1;
-//       for (let j = 0; j < Math.PI * 2; j += 0.05) {
-//         points.push(new THREE.Vector3(Math.cos(j) * radius, Math.sin(j) * radius, 0));
-//       }
-//       linesArray.push(<Line key={i} points={points} color="#9333ea" lineWidth={0.5} />);
-//     }
-//     return linesArray;
-//   }, []);
-//   return <>{lines}</>;
-//}
 
 export default function StarryNetworkBackground() {
   return ( 
