@@ -45,7 +45,7 @@ export const Work = () => {
       description: "This React image search app uses the Pexels API to fetch high-quality photos based on user queries. Users can enter keywords in the search bar to find relevant images displayed in a responsive grid. The app supports pagination with dynamic page buttons, allowing easy navigation through multiple pages of results. Hovering over an image reveals additional details, enhancing the user experience. Loading states handle API calls smoothly, and the design is clean and user-friendly.",
       github: "https://github.com/prisam1/ImgSearch.git",
       live: "https://riseupp.netlify.app/",
-      tech: ["React.Js", "CSS","Pexels",]
+      tech: ["React.Js", "CSS","Pexels", "Redux",]
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ export const Work = () => {
       description: "Itinerary Dashboard is a React application component that displays a paginated list of user itineraries with details such as trip name, dates, location, duration, hotel, and total cost. It securely redirects unauthenticated users to the login page by checking for a token in local storage. The dashboard supports loading and error states, with easy navigation through itinerary pages. It also offers quick access to itinerary creation and management via prominent action buttons.",
       github: "https://github.com/prisam1/Login",
       live: "https://pritams1.netlify.app",
-      tech: ["React.Js", "CSS", "Axios", "Node.js", "MongoDB", "Bycrypt", "Express.js", "JWT", "React Hook Form"]
+      tech: ["React.Js", "CSS", "Redux", "Axios", "Node.js", "MongoDB", "Bycrypt", "Express.js", "JWT", "React Hook Form"]
     },
     {
       id: 5,
@@ -82,7 +82,7 @@ export const Work = () => {
       description: "URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs.",
       github: "https://github.com/prisam1/URLshortner",
       live: "https://reliable-eclair-8f791a.netlify.app/",
-      tech: ["React.Js", "CSS", "Node.js", "MongoDB", "Express.js"]
+      tech: ["React.Js", "CSS", "Node.js", "Redis", "MongoDB", "Express.js"]
     },
     {
       id: 6,
