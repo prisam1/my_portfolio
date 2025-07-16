@@ -37,7 +37,7 @@ export const IMAGES = {
  url :require("../assets/project/urlShortener.png"), 
  news :require("../assets/project/news.png"), 
  itinerary:require("../assets/project/itinerary.png"),
- randomImg:require("../assets/project/randomImg.png")
- 
+ randomImg:require("../assets/project/randomImg.png"),
+ chatBot:require("../assets/project/ai_chatbot.png")
 }
   
