@@ -30,6 +30,15 @@ export const Work = () => {
       tech: ["React.Js", "TailwindCSS", "Node.js", "JWT", "MongoDB", "Express.js", "Bycrypt"]
     },
     {
+      id: 8,
+      img: IMAGES.chatBot,
+      title: "AI Landing Page Generator",
+      description: "A full-stack AI-powered chatbot application designed to facilitate interactive conversations between users and an artificial intelligence model. It provides secure user authentication, stores conversation history, and is built for scalability and performance. And to generate (landing page) HTML pages as per user requirement.",
+      github: "https://github.com/prisam1/ai_chatbot.git",
+      live: "https://ai-chatbot-puce-nine-71.vercel.app/",
+      tech: ["Next.Js", "TailwindCSS", "Supabase", "Prisma", "SchadCN", "Bycrypt", "JWT", "React Hook Form", "TypeScript", "NextAuth.js"]
+    },
+    {
       id: 2,
       img: IMAGES.hoichoi,
       title: "Hoichoi",
@@ -38,6 +47,7 @@ export const Work = () => {
       live: "https://thunderous-fox-a85e19.netlify.app/",
       tech: ["React.Js", "SCSS", "React Multi Carousel"]
     },
+    
     {
       id: 3,
       img: IMAGES.imgSearch,
@@ -45,7 +55,7 @@ export const Work = () => {
       description: "This React image search app uses the Pexels API to fetch high-quality photos based on user queries. Users can enter keywords in the search bar to find relevant images displayed in a responsive grid. The app supports pagination with dynamic page buttons, allowing easy navigation through multiple pages of results. Hovering over an image reveals additional details, enhancing the user experience. Loading states handle API calls smoothly, and the design is clean and user-friendly.",
       github: "https://github.com/prisam1/ImgSearch.git",
       live: "https://riseupp.netlify.app/",
-      tech: ["React.Js", "CSS","Pexels", "Redux",]
+      tech: ["React.Js", "CSS", "Pexels", "Redux",]
     },
     {
       id: 4,
@@ -57,7 +67,7 @@ export const Work = () => {
       tech: ["React.Js", "Redux", "CSS", "Axios"]
     },
     {
-      id: 7,
+      id: 5,
       img: IMAGES.itinerary,
       title: "Itinerary",
       description: "Itinerary Dashboard is a React application component that displays a paginated list of user itineraries with details such as trip name, dates, location, duration, hotel, and total cost. It securely redirects unauthenticated users to the login page by checking for a token in local storage. The dashboard supports loading and error states, with easy navigation through itinerary pages. It also offers quick access to itinerary creation and management via prominent action buttons.",
@@ -66,7 +76,7 @@ export const Work = () => {
       tech: ["React.Js", "CSS", "Redux", "Axios", "Node.js", "MongoDB", "Bycrypt", "Express.js", "JWT", "React Hook Form"]
     },
     {
-      id: 5,
+      id: 6,
       img: IMAGES.todo,
       title: "Todo App",
       description: "This React Todo app supports both dark and light modes using Redux. It allows users to add, edit, delete, complete, and filter tasks, with data saved in localStorage. Tasks can be sorted by title or filtered by status, and a modal is used for task input.The application is component-based, ensuring clean structure and maintainability.",
@@ -76,7 +86,7 @@ export const Work = () => {
     },
 
     {
-      id: 8,
+      id: 7,
       img: IMAGES.url,
       title: "URL Shortener App",
       description: "URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs.",
@@ -85,16 +95,7 @@ export const Work = () => {
       tech: ["React.Js", "CSS", "Node.js", "Redis", "MongoDB", "Express.js"]
     },
     {
-      id: 6,
-      img: IMAGES.reactApp,
-      title: "React App",
-      description: "Theme Customizer is a React + Redux web application that allows users to dynamically personalize the UI by changing the background, header, footer, font color, and font size. It supports predefined color schemes and real-time adjustments, with persistent settings saved in localStorage.",
-      github: "https://github.com/prisam1/Moris.git",
-      live: "https://transcendent-begonia-e26adf.netlify.app/",
-      tech: ["React.Js", "SCSS", "Redux"]
-    },
-    {
-      id: 7,
+      id: 9,
       img: IMAGES.randomImg,
       title: "React App",
       description: "This React app will generate random images (HD) every time when anyone visit or refresh the page and also able to share the image on Twitter, Whatsapp and Facebook and also able to see preview of that image. Upsplash is used to generate random images and image is fetching using axios call..",
@@ -102,6 +103,15 @@ export const Work = () => {
       live: "https://rdmimg.netlify.app/",
       tech: ["React.Js", "CSS", "Axios"]
     },
+    // {
+    //   id: 10,
+    //   img: IMAGES.reactApp,
+    //   title: "React App",
+    //   description: "Theme Customizer is a React + Redux web application that allows users to dynamically personalize the UI by changing the background, header, footer, font color, and font size. It supports predefined color schemes and real-time adjustments, with persistent settings saved in localStorage.",
+    //   github: "https://github.com/prisam1/Moris.git",
+    //   live: "https://transcendent-begonia-e26adf.netlify.app/",
+    //   tech: ["React.Js", "SCSS", "Redux"]
+    // },
   ];
 
   return (

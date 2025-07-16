@@ -6,6 +6,7 @@ import { Contact } from "./pages/Contact/Contact";
 import { Bottom } from "./layout/Bottom";
 import { Skills } from "./pages/Skills/Skills";
 import { Work } from "./pages/Work/Work"; 
+// import { LightStrike } from "./components/LightStricke";
 
 function App() {
   return (
@@ -40,8 +41,8 @@ function App() {
 
       {/* <section className="lg:scroll-mt-24 scroll-mt-[80px]" id="contact">
       <LightStrike />
-      </section> */}
-      
+      </section>
+       */}
 
       <Bottom />
     </div>
