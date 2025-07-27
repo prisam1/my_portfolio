@@ -3,7 +3,7 @@ import * as THREE from "three";
 //@ts-ignore
 import FOG from "vanta/src/vanta.clouds";
 import Typewriter from "typewriter-effect";
-import { IMAGES } from "../../constants/Images";
+import { IMAGES } from "../../constants";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
 
 const introData = {
@@ -46,18 +46,18 @@ export const Intro = () => {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="flex items-center justify-center min-h-screen">
+    <div ref={vantaRef} className="flex items-center justify-center min-h-screen ">
       <ScrollAnimation direction="up">
-        <div className="flex flex-col items-center justify-center text-center z-10 relative">
+        <div className="flex flex-col items-center justify-center text-center relative">
           <img
             src={IMAGES.pritam}
             alt="pritam"
-            className="lg:w-[250px] lg:h-[250px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-blue-500"
+            className="lg:w-[250px] lg:h-[250px] w-[150px] h-[150px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-purple-600"
           />
 
-          <h1 className="text-white lg:text-7xl text-2xl font-bold mt-10">
+          <span className="text-white lg:text-7xl text-2xl font-bold mt-10">
             Hello, I'm Pritam Kumar Samaddar
-          </h1>
+          </span>
 
           <span className="flex flex-row h-10 lg:text-4xl text-[18px] font-semibold my-8 text-purple-700">
             <p className="lg:text-4xl text-base font-semibold text-white pr-[8px]">I am a</p>

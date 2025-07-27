@@ -1,85 +1,65 @@
+import { experience } from "../../constants";
+import { Button } from "../../components/MovingBorders";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
+import StarryNetworkBackground from "../../components/StarBackground";
 
 export const Experience = () => {
   return (
-    <div className="flex-col flex lg:pt-10 pt-10 lg:h-[90vh] h-[92vh] bg-[#0078ff] w-[100%] lg:px-10 lg:py-0 px-[16px] py-[16px]">
+    <div className="relative flex-col flex justify-center lg:pt-10 pt-10 min-h-screen bg-[#030014] lg:py-0 px-[16px] py-[16px]">
+
+      {/* Background canvas positioned absolutely behind content */}
+      <div className="absolute inset-0 lg:z-10 h-full w-full">
+        <StarryNetworkBackground />
+      </div>
+
       <ScrollAnimation direction="up">
         <h1 className="text-white text-center lg:text-4xl font-bold ">
           Experience
         </h1>
       </ScrollAnimation>
-      <ScrollAnimation direction="up">
 
-        <div className="flex flex-col  lg:gap-3 gap-[4px]  lg:mt-0 mt-4 ">
-          <div className=" lg:h-[56vh] lg:mt-10">
-            <div className="animate-pulse flex flex-row items-center lg:gap-4 gap-2">
-              <div className="flex items-center flex-col">
-                <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
+
+      <ScrollAnimation direction="up">
+        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+
+          {experience.map((card) => (
+            <Button
+              key={card.id}
+              duration={Math.floor(Math.random() * 10000) + 10000}
+              borderRadius="1.75rem"
+              style={{
+                background: "rgb(4,7,29)",
+                backgroundColor:
+                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                borderRadius: `calc(1.75rem* 0.96)`,
+              }}
+              className="flex-1 text-white  border-slate-800"
+            >
+              <div className="flex lg:grid flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+
+                <div className="animate-pulse flex flex-row items-center lg:gap-4 gap-2">
+                  <div className="flex items-center flex-col">
+                    <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
+                  </div>
+                  <h1 className="lg:text-xl lg:mt-2 mt-2 text-sm  font-bold">
+                    {card.company}
+                  </h1>
+                  <h1 className=" lg:text-xl lg:mt-2 text-sm  font-semibold">
+                    {card.position}
+                  </h1>
+                  <span className="  lg:text-sm text-[10px] font-bold">
+                    {card.duration}
+                  </span>
+                </div>
+                <h1 className="lg:text-base text-start text-sm lg:max-w-4xl font-semibold pl-9">
+                  {card.contribution}
+                </h1>
               </div>
-              <h1 className="text-black lg:text-xl lg:mt-2 mt-2 text-sm  font-bold">
-                Atrox Technology Pvt. Ltd.
-              </h1>
-              <h1 className="text-black lg:text-xl lg:mt-2 text-sm  font-semibold">
-                (SDE-I)
-              </h1>
-              <span className="text-black lg:text-sm text-[10px] font-bold">
-                Feb 2024 - Dec 2024
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base text-sm lg:max-w-4xl font-semibold pl-10">
-              Contributed to Android app development with React Native and Expo,
-              focusing on building user-friendly mobile applications. Developed
-              backend systems using Feathers.js to provide a robust API for mobile
-              app functionality. Created the company website using Next.js,
-              ensuring high performance and SEO optimization. Played a key role in
-              implementing intuitive UI/UX design for mobile apps, enhancing user
-              engagement and experience. For a web APP Integrating React.js and
-              Nest.js for building scalable, maintainable applications.
-            </h1>
-            <div className="animate-pulse flex flex-row items-center lg:gap-4 gap-1">
-              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
-              <h1 className="text-black lg:text-xl text-sm lg:mt-2 mt-2 font-bold">
-                Percipience Labs
-              </h1>
-              <h1 className="text-black lg:text-xl text-sm lg:mt-2 font-semibold">
-                (Junior MERN Developer)
-              </h1>
-              <span className="text-black lg:text-sm text-[10px]  font-bold">
-                Oct 2023 - Jan 2024
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base text-sm lg:max-w-4xl  font-semibold pl-10">
-              Worked on Android app development using React Native and Ionic
-              frameworks, contributing to the development of multiple
-              applications, including SocialOut, Messaging, Retentive, and a
-              Payment Gateway system and Firebase for authentication. Integrated
-              backend services using Node.js, ensuring smooth communication
-              between the front-end and back-end components. Played a key role in
-              implementing intuitive UI/UX design for mobile apps, enhancing user
-              engagement and experience.
-            </h1>
-            <div className="animate-pulse flex flex-row items-center lg:gap-4 gap-1">
-              <div className="mt-2 border-2 rounded-full bg-[#1D874F] w-4 h-4" />
-              <h1 className="text-black lg:text-xl lg:mt-2 mt-2 text-sm font-bold">
-                FunctionUp
-              </h1>
-              <h1 className="text-black lg:text-xl lg:mt-2 text-sm  font-semibold">
-                (Backend Developer Trainee)
-              </h1>
-              <span className="text-black lg:text-sm text-[10px]  font-bold">
-                July 2022 - July 2023
-              </span>
-            </div>
-            <h1 className="text-black lg:text-base text-sm lg:max-w-4xl font-semibold pl-10">
-              Trained in backend development using Node.js and Express, and
-              developed applications with MongoDB for data storage. Worked with
-              AWS S3 for file storage and Redis for caching and performance
-              optimization. Gained hands-on experience with GitHub for version
-              control and collaborated effectively with teams to deliver projects
-              on time. Developed strong problem-solving skills while working on
-              real-world projects.
-            </h1>
-          </div>
+            </Button>
+          ))}
+        </div>
+        <div className="flex flex-col  lg:gap-3 gap-[4px]  lg:mt-0 mt-4 ">
+
         </div>
       </ScrollAnimation>
     </div>

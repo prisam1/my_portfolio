@@ -1,8 +1,19 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { IMAGES } from "../../constants/Images";
+import { IMAGES } from "../../constants";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
+import { Download, Github, Linkedin } from "lucide-react";
+
+
+const socialMedia = [
+  {
+    icon: <Linkedin />,
+    link: "https://www.linkedin.com/in/pritam-kumar-samaddar-047a3074/",
+  },
+  { icon: <Github />, link: "https://github.com/prisam1" },
+
+]
 
 export const About = () => {
 
@@ -31,7 +42,7 @@ export const About = () => {
     }));
 
     const animate = () => {
-      ctx.fillStyle = "#000";
+      ctx.fillStyle = "#030014";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "white";
@@ -84,27 +95,44 @@ export const About = () => {
 
 
   return (
-    <div className="lg:h-[90vh] h-[92vh]">
-      <canvas ref={canvasRef} className="absolute z-0 w-full" />
+    <div className="flex min-h-screen h-full justify-center items-center px-4">
+      <canvas ref={canvasRef} className="absolute z-0 min-h-screen h-full w-full" />
       <motion.div
-        className="relative z-10 text-white flex flex-col lg:px-0 lg:py-10 px-[16px] py-[40px]"
+        className="relative z-10 text-white flex flex-col"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
 
         <ScrollAnimation direction="up">
-          <h1 className="lg:text-4xl text-center font-bold ">
+          <h1 className="lg:text-4xl text-center font-bold mb-12">
             About Me
           </h1>
-          <div className="flex flex-row justify-around items-center lg:mt-10">
 
-            <img
-              src={IMAGES.pritam}
-              alt="pritam"
-              className="hidden md:block lg:w-[270px] lg:h-[270px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-blue-500"
-            />
+          <div className="flex flex-row gap-24 items-center">
+            <div className="hidden md:block">
+              <img
+                src={IMAGES.pritam}
+                alt="pritam"
+                className="lg:w-[270px] lg:h-[270px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-purple-600"
+              />
 
+              {/* Social Icons with animation and rounded background */}
+              <div className="flex gap-4 justify-center items-center mt-12">
+                {socialMedia.map((item, index) => (
+                  <motion.a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-gray-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <span className="text-2xl">{item.icon}</span>
+                  </motion.a>
+                ))}
+              </div>
+            </div>
             <div className="max-w-2xl">
               <h1 className="lg:text-2xl lg:mt-2 mt-6 font-bold">
                 I'm Pritam Kumar Samaddar
@@ -130,11 +158,15 @@ export const About = () => {
                 vision to life with precision and excellence!
               </h1>
 
-              <button
-                onClick={() => window.open("/Pritam_resume.pdf", "_blank")}
-                className="text-white px-6 py-3 lg:mt-10 mt-5 rounded-lg font-semibold bg-gradient-to-r from-pink-700  to-blue-700 hover:opacity-90 shadow-lg transform hover:scale-110">
-                Download Resume
-              </button>
+              <div className="hidden md:flex lg:mt-10 mt-5 items-center gap-2">
+                <button
+                  onClick={() => window.open("/Pritam_resume.pdf", "_blank")}
+                  className="flex items-center gap-2 text-white px-4 py-2 bg-gradient-to-r from-purple-800 to-blue-800 rounded-lg shadow hover:scale-105 transition"
+                >
+                  <Download size={18} className="animate-bounce" />
+                  Resume
+                </button>
+              </div>
             </div>
           </div>
 
