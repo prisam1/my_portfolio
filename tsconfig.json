@@ -15,7 +15,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "typeRoots": ["./types", "./node_modules/@types"]
-   // "types": ["react", "react-dom", "@react-three/fiber"]
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
+    // "types": ["react", "react-dom", "@react-three/fiber"]
   },
   "include": ["src"]
 }
