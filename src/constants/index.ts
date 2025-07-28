@@ -61,7 +61,7 @@ export const projects: Project[] = [
       id: 8,
       img: IMAGES.chatBot,
       title: "AI Landing Page Generator",
-      description: "A full-stack AI-powered chatbot application designed to facilitate interactive conversations between users and an artificial intelligence model. It provides secure user authentication, stores conversation history, and is built for scalability and performance. And to generate (landing page) HTML pages as per user requirement.",
+      description: "A full-stack AI-powered chatbot application designed to facilitate interactive conversations between users and an artificial intelligence model. It includes secure user authentication (JWT & Google OAuth),, stores conversation history, and is built for scalability and performance. And to generate (landing page) HTML CSS pages as per user requirement.",
       github: "https://github.com/prisam1/ai_chatbot.git",
       live: "https://ai-chatbot-puce-nine-71.vercel.app/",
       tech: ["Next.Js", "TailwindCSS", "Supabase", "Prisma", "SchadCN", "Bycrypt", "JWT", "React Hook Form", "TypeScript", "NextAuth.js"]
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       description: "A full-stack TypeScript web application where developers can sign up and log in securely, create and update their profile, post personal projects, any user can comment on other's projects, search users and projects",
       github: "https://github.com/prisam1/devConnect.git",
       live: "https://devsconnect.netlify.app/",
-      tech: ["React.Js", "Axios", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "Bycrypt", "JWT", "MongoDB",]
+      tech: ["React.Js", "Axios", "TypeScript","Redux", "TailwindCSS", "Node.js", "Express.js", "Bycrypt", "JWT", "MongoDB","Mongoose"]
     },
 
     {
