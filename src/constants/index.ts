@@ -40,7 +40,10 @@ export const IMAGES = {
  news :require("../assets/project/news.png"), 
  itinerary:require("../assets/project/itinerary.png"),
  randomImg:require("../assets/project/randomImg.png"),
- chatBot:require("../assets/project/ai_chatbot.png")
+ chatBot:require("../assets/project/ai_chatbot.png"),
+ devConnect:require("../assets/project/devConnect.png"),
+
+
 }
 
 
@@ -71,6 +74,15 @@ export const projects: Project[] = [
       github: "https://github.com/prisam1/Hoichoi",
       live: "https://thunderous-fox-a85e19.netlify.app/",
       tech: ["React.Js", "SCSS", "React Multi Carousel"]
+    },
+    {
+      id: 10,
+      img: IMAGES.devConnect,
+      title: "DevConnect",
+      description: "A full-stack TypeScript web application where developers can sign up and log in securely, create and update their profile, post personal projects, any user can comment on other's projects, search users and projects",
+      github: "https://github.com/prisam1/devConnect.git",
+      live: "https://devsconnect.netlify.app/",
+      tech: ["React.Js", "Axios", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "Bycrypt", "JWT", "MongoDB",]
     },
 
     {
