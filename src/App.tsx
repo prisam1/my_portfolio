@@ -44,7 +44,7 @@ function App() {
       </section>
        */}
 
-      <Bottom />
+      {/* <Bottom /> */}
     </div>
   );
 }
