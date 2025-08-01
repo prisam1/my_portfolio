@@ -116,6 +116,9 @@ export const Contact = () => {
             </h1>
           </div>
         </div>
+
+        <h1 className="mt-20 text-white text-center text-xl font-semibold">Made by Pritam Kumar Samaddar with ❤️</h1>
+
       </ScrollAnimation>
     </div>
   );
