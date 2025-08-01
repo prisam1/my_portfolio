@@ -42,7 +42,7 @@ export const IMAGES = {
  randomImg:require("../assets/project/randomImg.png"),
  chatBot:require("../assets/project/ai_chatbot.png"),
  devConnect:require("../assets/project/devConnect.png"),
-
+ inventory:require("../assets/project/inventory.png"),
 
 }
 
@@ -79,7 +79,7 @@ export const projects: Project[] = [
       id: 10,
       img: IMAGES.devConnect,
       title: "DevConnect",
-      description: "A full-stack TypeScript web application where developers can sign up and log in securely, create and update their profile, post personal projects, any user can comment on other's projects, search users and projects",
+      description: "A full stack TypeScript web application where developers can sign up and log in securely using JWT & Bycrypt, create and update their profile, post personal projects, any user can comment on other's projects and user can search other users as well as projects",
       github: "https://github.com/prisam1/devConnect.git",
       live: "https://devsconnect.netlify.app/",
       tech: ["React.Js", "Axios", "TypeScript","Redux", "TailwindCSS", "Node.js", "Express.js", "Bycrypt", "JWT", "MongoDB","Mongoose"]
@@ -109,8 +109,17 @@ export const projects: Project[] = [
       title: "Itinerary",
       description: "Itinerary Dashboard is a React application component that displays a paginated list of user itineraries with details such as trip name, dates, location, duration, hotel, and total cost. It securely redirects unauthenticated users to the login page by checking for a token in local storage. The dashboard supports loading and error states, with easy navigation through itinerary pages. It also offers quick access to itinerary creation and management via prominent action buttons.",
       github: "https://github.com/prisam1/Login",
-      live: "https://pritams1.netlify.app",
+      live: "https://pritams1.netlify.app/",
       tech: ["React.Js", "CSS", "Redux", "Axios", "Node.js", "MongoDB", "Bycrypt", "Express.js", "JWT", "React Hook Form"]
+    },
+    {
+      id: 11,
+      img: IMAGES.inventory,
+      title: "Inventory",
+      description: "A realtime FIFO Inventory Management System built using Node.js, Kafka, and PostgreSQL for the backend, and React + Tailwind CSS for the frontend. It allows businesses to handle inventory purchase and sale events using First-In-First-Out logic for accurate stock and pricing calculations.",
+      github: "https://github.com/prisam1/inventory-fifo-frontend.git",
+      live: "https://inventoryfifo.netlify.app/",
+      tech: ["React.Js", "Axios", "TailwindCSS", "Context API","Kafka","Node.Js"]
     },
     {
       id: 6,
@@ -121,7 +130,6 @@ export const projects: Project[] = [
       live: "https://whimsical-pothos-c08f6c.netlify.app/",
       tech: ["React.Js", "CSS", "Redux"]
     },
-
     {
       id: 7,
       img: IMAGES.url,
@@ -141,7 +149,7 @@ export const projects: Project[] = [
       tech: ["React.Js", "CSS", "Axios"]
     },
     // {
-    //   id: 10,
+    //   id: 12,
     //   img: IMAGES.reactApp,
     //   title: "React App",
     //   description: "Theme Customizer is a React + Redux web application that allows users to dynamically personalize the UI by changing the background, header, footer, font color, and font size. It supports predefined color schemes and real-time adjustments, with persistent settings saved in localStorage.",

@@ -2,8 +2,7 @@ import { About } from "./pages/About/About";
 import { Header } from "./layout/Header";
 import { Intro } from "./pages/Intro/Intro";
 import { Experience } from "./pages/Experience/Experience";
-import { Contact } from "./pages/Contact/Contact";
-import { Bottom } from "./layout/Bottom";
+import { Contact } from "./pages/Contact/Contact"; 
 import { Skills } from "./pages/Skills/Skills";
 import { Work } from "./pages/Work/Work";
 // import { LightStrike } from "./components/LightStricke";
@@ -42,9 +41,7 @@ function App() {
       {/* <section className="" id="contact">
       <LightStrike />
       </section>
-       */}
-
-      {/* <Bottom /> */}
+       */} 
     </div>
   );
 }
