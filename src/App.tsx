@@ -2,10 +2,12 @@ import { About } from "./pages/About/About";
 import { Header } from "./layout/Header";
 import { Intro } from "./pages/Intro/Intro";
 import { Experience } from "./pages/Experience/Experience";
-import { Contact } from "./pages/Contact/Contact"; 
+import { Contact } from "./pages/Contact/Contact";
 import { Skills } from "./pages/Skills/Skills";
 import { Work } from "./pages/Work/Work";
+import { Toaster } from 'sonner';
 // import { LightStrike } from "./components/LightStricke";
+
 
 function App() {
   return (
@@ -41,7 +43,8 @@ function App() {
       {/* <section className="" id="contact">
       <LightStrike />
       </section>
-       */} 
+       */}
+      <Toaster position="top-center" richColors theme="dark" />
     </div>
   );
 }

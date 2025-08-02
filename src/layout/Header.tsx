@@ -1,13 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
-import { 
+import {
   Home,
   User,
   Brain,
   Briefcase,
-  FolderDot, 
+  FolderDot,
   Mail,
 } from "lucide-react";
-
 
 const navLinks = [
   { id: "home", label: "Home", icon: Home }, // Added 'icon' property
@@ -19,7 +18,7 @@ const navLinks = [
 ];
 
 export const Header = () => {
-  const [activeLink, setActiveLink] = useState("home"); 
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;

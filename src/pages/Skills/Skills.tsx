@@ -154,12 +154,22 @@ export const Skills = () => {
             <img
               src={IMAGES.git}
               alt="react"
-              className="lg:w-[140px] lg:h-[80px] w-[86px] h-[56px] bg-white rounded-lg lg:px-2 lg:py-2 p-1"
+              className="lg:w-[140px] lg:h-[80px] w-[86px] h-[56px] bg-white rounded-lg lg:px-2 lg:py-3 p-1"
             />
             <img
               src={IMAGES.github}
               alt="react"
               className="lg:w-[140px] lg:h-[80px] w-[86px] h-[56px] bg-white rounded-lg"
+            />
+             <img
+              src={IMAGES.kafka}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[86px] h-[56px] bg-white rounded-lg lg:px-2 p-1"
+            />
+            <img
+              src={IMAGES.docker}
+              alt="react"
+              className="lg:w-[140px] lg:h-[80px] w-[86px] h-[56px] bg-white rounded-lg lg:px-2 lg:py-2 p-1"
             />
           </div>
         </ScrollAnimation>
