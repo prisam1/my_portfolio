@@ -1,7 +1,10 @@
 import { Project } from "../../types/project";
 
 export const IMAGES = {
+
  pritam:require("../assets/skills/pritam.jpg"),
+
+ //skills
  react :require("../assets/skills/react.png"),
  native :require("../assets/skills/native.png"),
  mongo :require("../assets/skills/mongo.png"),
@@ -31,6 +34,8 @@ export const IMAGES = {
  firebase :require("../assets/skills/firebase.png"),
  kafka :require("../assets/skills/kafka.png"),
  docker:require("../assets/skills/docker.png"),
+ electron:require("../assets/skills/electron.webp"),
+
 
  // projects
  feedTask :require("../assets/project/feedTask.png"), 
@@ -45,7 +50,6 @@ export const IMAGES = {
  chatBot:require("../assets/project/ai_chatbot.png"),
  devConnect:require("../assets/project/devConnect.png"),
  inventory:require("../assets/project/inventory.png"),
- 
 }
 
 
