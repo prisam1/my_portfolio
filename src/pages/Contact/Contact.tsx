@@ -139,7 +139,7 @@ export const Contact = () => {
                   <textarea
                     {...field}
                     placeholder="Message"
-                    className="w-full mb-2 p-4 rounded-xl h-64 border resize-none font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-3 p-4 rounded-xl h-64 border resize-none font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {errors.message && (
                     <p className="text-red-500 text-sm mb-3">{errors.message.message}</p>
@@ -167,6 +167,11 @@ export const Contact = () => {
             </h1>
           </div>
         </div>
+        {/* <div className="mt-10">
+          <h1 className=" text-white text-left text-xl font-normal">
+            mail - pritamsamaddar840@gmail.com
+          </h1>
+        </div> */}
 
         <h1 className="mt-20 text-white text-center text-xl font-semibold">
           Made by Pritam Kumar Samaddar with ❤️
