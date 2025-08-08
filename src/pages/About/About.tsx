@@ -160,7 +160,7 @@ export const About = () => {
 
               <div className="hidden md:flex lg:mt-10 mt-5 items-center gap-2">
                 <button
-                  onClick={() => window.open("/Pritam_resume.pdf", "_blank")}
+                  onClick={() => window.open("/Pritam_Kumar_Samaddar_Full_Stack.pdf", "_blank")}
                   className="flex items-center gap-2 text-white px-4 py-2 bg-gradient-to-r from-purple-800 to-blue-800 rounded-lg shadow hover:scale-105 transition"
                 >
                   <Download size={18} className="animate-bounce" />
