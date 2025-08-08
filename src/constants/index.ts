@@ -172,13 +172,15 @@ export const experience = [
       position: "(SDE-I)",
       duration: "Feb 2024 - Dec 2024",
       contribution: `Contributed to Android app development with React Native and Expo,
-      focusing on building user- friendly mobile applications.Developed
+      focusing on building user-friendly mobile applications. Developed
       backend systems using Feathers.js to provide a robust API for mobile
-      app functionality.Created the company website using Next.js,
-    ensuring high performance and SEO optimization.Played a key role in
-      implementing intuitive UI / UX design for mobile apps, enhancing user
-      engagement and experience.For a web APP Integrating React.js and
-  Nest.js for building scalable, maintainable applications.`
+      app functionality. Created the company website using Next.js,
+      ensuring high performance and SEO optimization. Played a key role in
+      implementing intuitive UI/UX design for mobile apps, enhancing user
+      engagement and experience. For a web app, integrated React.js (with Vite),
+      worked with D3.js, Recharts for data visualization, used TanStack Query
+      for efficient data fetching, and implemented useDebounce for optimized performance.
+      Also used Nest.js for building scalable and maintainable backend services.`
     },
     {
       id: 2,
