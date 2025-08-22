@@ -49,7 +49,7 @@ export const Header = () => {
   return (
     <>
 
-      <div className="hidden md:flex fixed top-5 left-1/2 transform -translate-x-1/2 shadow-lg shadow-[#1E084D] bg-[#030014cc] backdrop-blur-md z-50 px-5 py-3 rounded-full">
+      <div className="hidden md:flex fixed top-5 left-1/2 transform -translate-x-1/2 shadow-[0_0_20px] shadow-[#1E084D] bg-[#030014cc] backdrop-blur-md z-50 px-5 py-3 rounded-full">
         <div className="flex items-center justify-between space-x-8 text-white text-sm font-medium">
 
           {/* Desktop Nav */}
