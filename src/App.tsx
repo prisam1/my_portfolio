@@ -12,9 +12,7 @@ import { Toaster } from 'sonner';
 function App() {
   return (
     <div className="flex-col min-h-screen bg-gray-200">
-      {/* <div className="fixed top-0 left-0 w-full z-50"> */}
-      <Header />
-      {/* </div> */}
+       <Header /> 
 
       <section className="" id="home">
         <Intro />

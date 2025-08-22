@@ -150,14 +150,14 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-4 px-4 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="w-full bg-gradient-to-tr from-blue-600 via-purple-700 to-blue-500 text-white py-4 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Send Message
             </button>
           </form>
 
           <div className="lg:p-10 p-3">
-            <h1 className="text-white lg:text-2xl lg:mt-0 mt-1 font-bold border-b-2 border-blue-700">
+            <h1 className="text-white lg:text-2xl lg:mt-0 mt-1 font-bold border-b-2 border-purple-700">
               Get in Touch
             </h1>
             <h1 className="text-white lg:mt-10 mt-4 font-sans lg:text-lg md:text-xs lg:font-semibold">
@@ -167,13 +167,7 @@ export const Contact = () => {
             </h1>
           </div>
         </div>
-        {/* <div className="mt-10">
-          <h1 className=" text-white text-left text-xl font-normal">
-            mail - pritamsamaddar840@gmail.com
-          </h1>
-        </div> */}
-
-        <h1 className="mt-20 text-white text-center text-xl font-semibold">
+        <h1 className="mt-20 text-purple-700 text-center text-xl font-semibold">
           Made by Pritam Kumar Samaddar with ❤️
         </h1>
       </ScrollAnimation>

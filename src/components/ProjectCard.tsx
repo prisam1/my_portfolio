@@ -19,8 +19,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       >
         <img
           src={project.img}
-          alt={project.title}
-          // width={320}
+          alt={project.title} 
           height={180}
           className="w-full rounded-xl object-cover"
         />
