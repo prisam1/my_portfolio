@@ -62,7 +62,7 @@ export const projects: Project[] = [
       description: "FeedTask is a full stack social feed and task management app that allows users to post image-based content and manage tasks using a drag-and-drop interface. It includes secure user authentication (JWT & Google OAuth), password recovery via OTP, and real-time task updates. Photos are stored with Cloudinary, styled using Tailwind CSS, and optimized with Base64 encoding for performance.",
       github: "https://github.com/prisam1/FeedWebApp.git",
       live: "https://feedtask.netlify.app/",
-      tech: ["React.Js", "TailwindCSS", "Node.js", "JWT", "MongoDB", "Express.js", "Bycrypt"]
+      tech: ["React.Js", "TailwindCSS", "Typescript", "Node.js", "Axios", "OAuth", "Sonner", "JWT", "MongoDB", "Express.js", "Bycrypt"]
     },
     {
       id: 2,
@@ -71,7 +71,7 @@ export const projects: Project[] = [
       description: "A full-stack AI-powered chatbot application designed to facilitate interactive conversations between users and an artificial intelligence model. It includes secure user authentication (JWT & Google OAuth), stores conversation history, and is built for scalability and performance. And to generate (landing page) HTML CSS pages as per user requirement.",
       github: "https://github.com/prisam1/ai_chatbot.git",
       live: "https://ai-chatbot-puce-nine-71.vercel.app/",
-      tech: ["Next.Js", "TailwindCSS", "Supabase", "Prisma", "SchadCN", "Bycrypt", "JWT", "React Hook Form", "TypeScript", "NextAuth.js"]
+      tech: ["Next.Js", "TailwindCSS", "Supabase", "Prisma", "SchadCN", "OAuth", "Bycrypt", "JWT", "React Hook Form", "TypeScript", "NextAuth.js"]
     },
     {
       id: 3,
