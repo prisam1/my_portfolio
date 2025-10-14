@@ -51,6 +51,7 @@ export const IMAGES = {
  devConnect:require("../assets/project/devConnect.png"),
  inventory:require("../assets/project/inventory.png"),
  greenwood:require("../assets/project/greenwood.png"),
+ crypto:require("../assets/project/crypto.png"),
 }
 
 
@@ -75,16 +76,24 @@ export const projects: Project[] = [
     },
     {
       id: 3,
+      img: IMAGES.crypto,
+      title: "Crypto Dashboard",
+      description: "A real-time cryptocurrency dashboard built with React + TypeScript + Tailwind CSS + Axios + Recharts. It fetches live data from the CoinGecko API and displays in price charts (auto-updating every 30s), top market data (coins, market cap, price changes) with optimized with custom hooks, data caching, and interval updates ",
+      github: "https://github.com/prisam1/crypto_dashboard.git",
+      live: "https://cryptosd.netlify.app/",
+      tech: ["React.Js", "TailwindCSS", "Axios", "Typescript", "Recharts", "CoinGecko" ]
+    },
+    {
+      id: 4,
       img: IMAGES.greenwood,
       title: "Greenwood Elementary School",
       description: "A modern, responsive Admin Dashboard for Greenwood Elementary School. This project is built using React.js + TypeScript + Tailwind CSS, configured with CRACO for custom overrides. Clean, mobile-first design using Tailwind CSS, Component-Based Architecture, Data Visualization",
       github: "https://github.com/prisam1/GreenWood.git",
       live: "https://greenwoodelementary.netlify.app/",
       tech: ["React.Js", "TailwindCSS", "Recharts", "SchadCN", "Craco", "Lucide-React", "TypeScript"]
-    },
-   
+    }, 
     {
-      id: 4,
+      id: 5,
       img: IMAGES.devConnect,
       title: "DevConnect",
       description: "A full stack TypeScript web application where developers can sign up and log in securely using JWT & Bycrypt, create and update their profile, post personal projects, any user can comment on other's projects and user can search other users as well as projects",
@@ -93,7 +102,7 @@ export const projects: Project[] = [
       tech: ["React.Js", "Axios", "TypeScript","Redux", "TailwindCSS", "Node.js", "Express.js", "Bycrypt", "JWT", "MongoDB","Mongoose"]
     },
     {
-      id: 5,
+      id: 6,
       img: IMAGES.hoichoi,
       title: "Hoichoi",
       description: "This React Hoichoi clone displays static movie images in a carousel and includes a search bar with live filtering of movie titles. It features a language toggle (English/Bengali) and navigation links to mimic Hoichoi’s main sections, focusing on UI replication without dynamic API integration.",
@@ -102,7 +111,7 @@ export const projects: Project[] = [
       tech: ["React.Js", "SCSS", "React Multi Carousel"]
     },
     {
-      id: 6,
+      id: 7,
       img: IMAGES.imgSearch,
       title: "Image Search",
       description: "This React image search app uses the Pexels API to fetch high-quality photos based on user queries. Users can enter keywords in the search bar to find relevant images displayed in a responsive grid. The app supports pagination with dynamic page buttons, allowing easy navigation through multiple pages of results. Hovering over an image reveals additional details, enhancing the user experience. Loading states handle API calls smoothly, and the design is clean and user-friendly.",
@@ -111,7 +120,7 @@ export const projects: Project[] = [
       tech: ["React.Js", "CSS", "Pexels", "Redux",]
     },
     {
-      id: 7,
+      id: 8,
       img: IMAGES.news,
       title: "The News",
       description: "This is a responsive React news app that fetches real-time articles from the NewsData.io API. Users can filter news by country, language, category, and search keywords. It uses Redux for state management, includes debounced search, and securely manages API keys through environment variables. The UI features a clean grid layout.",
@@ -120,7 +129,7 @@ export const projects: Project[] = [
       tech: ["React.Js", "Redux", "CSS", "Axios"]
     },
     {
-      id: 8,
+      id: 9,
       img: IMAGES.itinerary,
       title: "Itinerary",
       description: "Itinerary Dashboard is a React application component that displays a paginated list of user itineraries with details such as trip name, dates, location, duration, hotel, and total cost. It securely redirects unauthenticated users to the login page by checking for a token in local storage. The dashboard supports loading and error states, with easy navigation through itinerary pages. It also offers quick access to itinerary creation and management via prominent action buttons.",
@@ -129,22 +138,13 @@ export const projects: Project[] = [
       tech: ["React.Js", "CSS", "Redux", "Axios", "Node.js", "MongoDB", "Bycrypt", "Express.js", "JWT", "React Hook Form"]
     },
     {
-      id: 9,
+      id: 10,
       img: IMAGES.inventory,
       title: "Inventory",
       description: "A realtime FIFO Inventory Management System built using Node.js, Kafka, and PostgreSQL for the backend, and React + Tailwind CSS for the frontend. It allows businesses to handle inventory purchase and sale events using First-In-First-Out logic for accurate stock and pricing calculations.",
       github: "https://github.com/prisam1/inventory-fifo-frontend.git",
       live: "https://inventoryfifo.netlify.app/",
       tech: ["React.Js", "Axios", "TailwindCSS", "Context API","Kafka","Node.Js"]
-    },
-    {
-      id: 10,
-      img: IMAGES.todo,
-      title: "Todo App",
-      description: "This React Todo app supports both dark and light modes using Redux. It allows users to add, edit, delete, complete, and filter tasks, with data saved in localStorage. Tasks can be sorted by title or filtered by status, and a modal is used for task input.The application is component-based, ensuring clean structure and maintainability.",
-      github: "https://github.com/prisam1/Taskmanager.git",
-      live: "https://whimsical-pothos-c08f6c.netlify.app/",
-      tech: ["React.Js", "CSS", "Redux"]
     },
     {
       id: 11,
@@ -163,6 +163,15 @@ export const projects: Project[] = [
       github: "https://github.com/prisam1/Pritam_Kumar_Samaddar.git",
       live: "https://rdmimg.netlify.app/",
       tech: ["React.Js", "CSS", "Axios"]
+    },
+    {
+      id: 13,
+      img: IMAGES.todo,
+      title: "Todo App",
+      description: "This React Todo app supports both dark and light modes using Redux. It allows users to add, edit, delete, complete, and filter tasks, with data saved in localStorage. Tasks can be sorted by title or filtered by status, and a modal is used for task input.The application is component-based, ensuring clean structure and maintainability.",
+      github: "https://github.com/prisam1/Taskmanager.git",
+      live: "https://whimsical-pothos-c08f6c.netlify.app/",
+      tech: ["React.Js", "CSS", "Redux"]
     },
     // {
     //   id: 12,
