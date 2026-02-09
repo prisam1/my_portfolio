@@ -185,6 +185,20 @@ export const projects: Project[] = [
   ];
 
 export const experience = [
+  {
+    id: 4,
+    company: "Vexalink",
+    position: "Full Stack AI Developer",
+    duration: "Oct 2025 - Jan 2026",
+    contribution: `As a Full Stack AI Developer, I spearheaded the backend architecture using
+     Node.js, focusing on the seamless integration of third-party AI services and real-time 
+     communication protocols. I implemented a robust AI-driven voice system leveraging the 
+     Retell AI API, utilizing webhooks to manage asynchronous data flows and event-driven 
+     triggers. Beyond telephony, I engineered the application’s core infrastructure by designing
+     scalable RESTful APIs and managing a PostgreSQL database. My work included deep query 
+     optimization to ensure high performance, as well as developing comprehensive analytics 
+     modules and end-to-end features for the entire platform ecosystem.`
+  },
     {
       id: 1,
       company: "Atrox Technology Pvt. Ltd.",
