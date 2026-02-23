@@ -52,18 +52,19 @@ export const IMAGES = {
  inventory:require("../assets/project/inventory.png"),
  greenwood:require("../assets/project/greenwood.png"),
  crypto:require("../assets/project/crypto.png"),
+ ultraDoc:require("../assets/project/ultraDoc.png"),
 }
 
 
 export const projects: Project[] = [
     {
       id: 1,
-      img: IMAGES.feedTask,
-      title: "FeedTask",
-      description: "FeedTask is a full stack social feed and task management app that allows users to post image-based content and manage tasks using a drag-and-drop interface. It includes secure user authentication (JWT & Google OAuth), password recovery via OTP, and real-time task updates. Photos are stored with Cloudinary, styled using Tailwind CSS, and optimized with Base64 encoding for performance.",
-      github: "https://github.com/prisam1/FeedWebApp.git",
-      live: "https://feedtask.netlify.app/",
-      tech: ["React.Js", "TailwindCSS", "Typescript", "Node.js", "Axios", "OAuth", "Sonner", "JWT", "MongoDB", "Express.js", "Bycrypt"]
+      img: IMAGES.ultraDoc,
+      title: "UltraDoc",
+      description: "This is the React based interface for the UltraDoc POC. It provides a high-fidelity dashboard for logistics professionals to interact with document data, view automated extractions, and verify AI-generated answers with source attribution. UltraDoc is an AI-powered document auditor designed for Transportation Management Systems (TMS). It allows users to upload logistics documents (PDF/DOCX) and perform grounded Q&A and structured data extraction with built-in hallucination guardrails.",
+      github: "https://github.com/prisam1/ultra-doc-frontend.git",
+      live: "https://ultra-doc-frontend.vercel.app/",
+      tech: ["React.Js", "CSS", "Javascript", "Python", "FastAPI", "langchain","langchain-google-genai", "Numpy", "pymupdf", "Axios","python-multipart","faiss-cpu"]
     },
     {
       id: 2,
@@ -92,6 +93,15 @@ export const projects: Project[] = [
       live: "https://greenwoodelementary.netlify.app/",
       tech: ["React.Js", "TailwindCSS", "Recharts", "SchadCN", "Craco", "Lucide-React", "TypeScript"]
     }, 
+    {
+      id: 15,
+      img: IMAGES.feedTask,
+      title: "FeedTask",
+      description: "FeedTask is a full stack social feed and task management app that allows users to post image-based content and manage tasks using a drag-and-drop interface. It includes secure user authentication (JWT & Google OAuth), password recovery via OTP, and real-time task updates. Photos are stored with Cloudinary, styled using Tailwind CSS, and optimized with Base64 encoding for performance.",
+      github: "https://github.com/prisam1/FeedWebApp.git",
+      live: "https://feedtask.netlify.app/",
+      tech: ["React.Js", "TailwindCSS", "Typescript", "Node.js", "Axios", "OAuth", "Sonner", "JWT", "MongoDB", "Express.js", "Bycrypt"]
+    },
     {
       id: 5,
       img: IMAGES.devConnect,
@@ -173,15 +183,15 @@ export const projects: Project[] = [
       live: "https://whimsical-pothos-c08f6c.netlify.app/",
       tech: ["React.Js", "CSS", "Redux"]
     },
-    // {
-    //   id: 12,
-    //   img: IMAGES.reactApp,
-    //   title: "React App",
-    //   description: "Theme Customizer is a React + Redux web application that allows users to dynamically personalize the UI by changing the background, header, footer, font color, and font size. It supports predefined color schemes and real-time adjustments, with persistent settings saved in localStorage.",
-    //   github: "https://github.com/prisam1/Moris.git",
-    //   live: "https://transcendent-begonia-e26adf.netlify.app/",
-    //   tech: ["React.Js", "SCSS", "Redux"]
-    // },
+    {
+      id: 14,
+      img: IMAGES.reactApp,
+      title: "React App",
+      description: "Theme Customizer is a React + Redux web application that allows users to dynamically personalize the UI by changing the background, header, footer, font color, and font size. It supports predefined color schemes and real-time adjustments, with persistent settings saved in localStorage.",
+      github: "https://github.com/prisam1/Moris.git",
+      live: "https://transcendent-begonia-e26adf.netlify.app/",
+      tech: ["React.Js", "SCSS", "Redux"]
+    },
   ];
 
 export const experience = [
