@@ -43,7 +43,7 @@ export const Header = () => {
   }, [handleScroll]);
 
   const handleNavClick = (id: string) => {
-    setActiveLink(id); 
+    setActiveLink(id);
   };
 
   return (
@@ -75,8 +75,7 @@ export const Header = () => {
       </div>
 
       {/* Mobile Nav Drawer */}
-      <div className="flex fixed z-50 w-full justify-between gap-4 h-14 max-w-xl items-center -translate-x-1/2 bg-[#110F0E] border border-purple-800 rounded-full bottom-4 left-1/2 md:hidden px-4">
-        {navLinks.map(({ id, label }) => (
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex h-14 w-[calc(100%-2.2rem)] max-w-md items-center justify-between rounded-full border border-purple-800 bg-[#110F0E] px-6 shadow-lg md:hidden">  {navLinks.map(({ id, label, icon: IconComponent }) => (
           <a
             key={id}
             href={`#${id}`}
@@ -85,11 +84,11 @@ export const Header = () => {
               ${activeLink === id ? "text-purple-600 font-bold" : "text-white"}
             `}
           >
-            {label}
+            {/* {label} */}
+            <IconComponent size={22} />
           </a>
         ))}
       </div>
-
     </>
   );
 };
