@@ -150,11 +150,18 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full py-4 px-4 bg-[#08031a] border border-indigo-500/30 text-indigo-100 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(79,70,229,0.2)] hover:bg-[#0a0520] transition-all duration-300 active:scale-95"
+              // className="w-full py-4 px-4 bg-[#08031a] border border-indigo-500/30 text-indigo-100 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(79,70,229,0.2)] hover:bg-[#0a0520] transition-all duration-300 active:scale-95"
+              className="group relative w-full justify-center px-5 py-2.5 bg-purple-900/20 border border-purple-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(168,85,247,0.15)] hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
             >
               <span className="flex items-center justify-center gap-2">
                 Send Message
               </span>
+              {/* Hover Effect: A sliding shine that moves across the button */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+              {/* Hover Effect: Background shift */}
+              <div className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity" />
+
             </button>
           </form>
 

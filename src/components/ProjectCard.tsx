@@ -59,7 +59,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
             <div className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity" />
           </a>
 
-          {/* Live Demo Link */}
+          {/* Live Link */}
           <a
             href={project.live}
             target="_blank"
