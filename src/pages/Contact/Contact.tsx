@@ -150,9 +150,11 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-tr from-blue-600 via-purple-700 to-blue-500 text-white py-4 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="w-full py-4 px-4 bg-[#08031a] border border-indigo-500/30 text-indigo-100 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(79,70,229,0.2)] hover:bg-[#0a0520] transition-all duration-300 active:scale-95"
             >
-              Send Message
+              <span className="flex items-center justify-center gap-2">
+                Send Message
+              </span>
             </button>
           </form>
 

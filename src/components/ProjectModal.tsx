@@ -45,30 +45,45 @@ export const ProjectModal = ({ project, onClose }: ModalProps) => {
                     {project.tech.map((tech, i) => (
                         <span
                             key={i}
-                            className="bg-gradient-to-l from-lime-700 to-blue-800  text-gray-200 px-3 py-1 rounded-full text-sm"
-                        >
+                            className="px-3 py-1 text-xs font-medium bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full backdrop-blur-sm shadow-[0_0_10px_rgba(16,185,129,0.1)]">
                             {tech}
                         </span>
                     ))}
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-4 flex-wrap">
+                    {/* GitHub Link */}
                     <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gradient-to-l from-purple-800 to-blue-800 hover:gradient-to-l hover:from-purple-700 hover:to-blue-700 hover:scale-110 text-white px-4 py-2 rounded-md text-sm flex items-center gap-2 transition"
+                        className="group relative px-5 py-2.5 bg-purple-900/20 border border-purple-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(168,85,247,0.15)] hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
                     >
-                        <Github size={16} /> GitHub
+                        <Github size={18} className="group-hover:scale-110 transition-transform" />
+                        <span className="relative z-10 font-medium">GitHub</span>
+
+                        {/* Hover Effect: A sliding shine that moves across the button */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+                        {/* Hover Effect: Background shift */}
+                        <div className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity" />
                     </a>
+
+                    {/* Live Demo Link */}
                     <a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gradient-to-l from-purple-800 to-blue-800 hover:gradient-to-l hover:from-purple-700 hover:to-blue-700 hover:scale-110 text-white px-4 py-2 rounded-md text-sm flex items-center gap-2 transition"
+                        className="group relative px-5 py-2.5 bg-blue-900/20 border border-blue-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]"
                     >
-                        <ExternalLink size={16} /> Live Demo
+                        <ExternalLink size={18} className="group-hover:rotate-12 transition-transform" />
+                        <span className="relative z-10 font-medium">Live Demo</span>
+
+                        {/* Hover Effect: A sliding shine */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+                        {/* Hover Effect: Background shift */}
+                        <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 transition-opacity" />
                     </a>
                 </div>
             </div>

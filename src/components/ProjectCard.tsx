@@ -19,7 +19,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       >
         <img
           src={project.img}
-          alt={project.title} 
+          alt={project.title}
           height={180}
           className="w-full rounded-xl object-cover"
         />
@@ -35,29 +35,45 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
           {project.tech.slice(0, 5).map((tech, index) => (
             <span
               key={index}
-              className="bg-gradient-to-l from-lime-700 to-blue-800 text-sm text-gray-200 px-2 py-1 rounded-full"
-            >
+              className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-cyan-600/20 to-purple-600/20 border border-white/10 text-cyan-200 rounded-full transition-colors hover:border-cyan-500/50">
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="flex gap-4 mt-2">
+        <div className="flex gap-4 flex-wrap">
+          {/* GitHub Link */}
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-l from-purple-800 to-blue-600 text-white px-4 py-2 rounded-lg text-sm flex items-center gap-2 hover:gradient-to-l hover:from-purple-700 hover:to-blue-700 transition hover:scale-110"
+            className="group relative px-5 py-2.5 bg-purple-900/20 border border-purple-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(168,85,247,0.15)] hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
           >
-            <Github size={16} /> GitHub
+            <Github size={18} className="group-hover:scale-110 transition-transform" />
+            <span className="relative z-10 font-medium">GitHub</span>
+
+            {/* Hover Effect: A sliding shine that moves across the button */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+            {/* Hover Effect: Background shift */}
+            <div className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity" />
           </a>
+
+          {/* Live Demo Link */}
           <a
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-l from-purple-800 to-blue-600 text-white px-4 py-2 rounded-lg text-sm flex items-center gap-2 hover:gradient-to-l hover:from-purple-700 hover:to-blue-700 transition hover:scale-110"
+            className="group relative px-5 py-2.5 bg-blue-900/20 border border-blue-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]"
           >
-            <ExternalLink size={16} /> Live Demo
+            <ExternalLink size={18} className="group-hover:rotate-12 transition-transform" />
+            <span className="relative z-10 font-medium">Live Demo</span>
+
+            {/* Hover Effect: A sliding shine */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+            {/* Hover Effect: Background shift */}
+            <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 transition-opacity" />
           </a>
         </div>
       </div>

@@ -161,10 +161,16 @@ export const About = () => {
               <div className=" md:flex mt-10 items-center gap-2">
                 <button
                   onClick={() => window.open("/Pritam_Kumar_Samaddar_Full_Stack.pdf", "_blank")}
-                  className="flex items-center gap-2 text-white px-4 py-2 bg-gradient-to-r from-purple-800 to-blue-800 rounded-lg shadow hover:scale-105 transition"
+                  className="group relative flex items-center gap-2 px-6 py-3 bg-purple-500/10 border border-purple-500/50 text-purple-100 rounded-full transition-all duration-300 hover:bg-purple-500/20 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] active:scale-95"
                 >
-                  <Download size={18} className="animate-bounce" />
-                  Resume
+                  <Download
+                    size={18}
+                    className="transition-transform duration-300 group-hover:-translate-y-1 animate-bounce"
+                  />
+                  <span className="font-semibold tracking-wide">Resume</span>
+
+                  {/* Subtle pulse effect in the background */}
+                  <span className="absolute inset-0 rounded-full bg-purple-500/5 animate-pulse group-hover:hidden"></span>
                 </button>
               </div>
             </div>
