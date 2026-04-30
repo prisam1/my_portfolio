@@ -199,7 +199,7 @@ export const experience = [
     id: 4,
     company: "Vexalink",
     position: "(Full Stack AI Developer)",
-    duration: "Oct 2025 - Jan 2026",
+    duration: "Oct 2025 - Feb 2026",
     contribution: `As a Full Stack AI Developer, I spearheaded the backend architecture using
      Node.js, focusing on the seamless integration of third-party AI services and real-time 
      communication protocols. I implemented a robust AI-driven voice system leveraging the 

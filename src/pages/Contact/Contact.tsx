@@ -70,7 +70,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Name"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   {errors.name && (
                     <p className="text-red-500 text-sm mb-3">{errors.name.message}</p>
@@ -95,7 +95,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Email"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm mb-3">{errors.email.message}</p>
@@ -114,7 +114,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Subject"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm mb-3">{errors.subject.message}</p>
@@ -139,7 +139,7 @@ export const Contact = () => {
                   <textarea
                     {...field}
                     placeholder="Message"
-                    className="w-full mb-3 p-4 rounded-xl h-64 border resize-none font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-3 p-4 rounded-xl h-64 border resize-none font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   {errors.message && (
                     <p className="text-red-500 text-sm mb-3">{errors.message.message}</p>
@@ -151,7 +151,7 @@ export const Contact = () => {
             <button
               type="submit"
               // className="w-full py-4 px-4 bg-[#08031a] border border-indigo-500/30 text-indigo-100 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(79,70,229,0.2)] hover:bg-[#0a0520] transition-all duration-300 active:scale-95"
-              className="group relative w-full justify-center px-5 py-2.5 bg-purple-900/20 border border-purple-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(168,85,247,0.15)] hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
+              className="group relative w-full justify-center px-5 py-4 bg-purple-800/10 border border-purple-500/50 text-white rounded-lg text-sm flex items-center gap-2 transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(168,85,247,0.15)] hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
             >
               <span className="flex items-center justify-center gap-2">
                 Send Message
