@@ -45,7 +45,7 @@ export const Contact = () => {
       </div>
 
       <ScrollAnimation direction="up">
-        <div className="relative z-10 flex justify-between border border-gray-400 lg:flex-row flex-col rounded-xl">
+        <div className="relative z-10 flex justify-between border md:mb-0 mb-8 border-purple-500 lg:flex-row flex-col rounded-xl">
           <form
             className="lg:shadow-xl shadow-sm lg:p-8 p-4 lg:pt-10 w-full max-w-sm sm:max-w-lg lg:max-w-2xl"
             onSubmit={handleSubmit(onSubmit)}
@@ -70,7 +70,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Name"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {errors.name && (
                     <p className="text-red-500 text-sm mb-3">{errors.name.message}</p>
@@ -95,7 +95,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Email"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm mb-3">{errors.email.message}</p>
@@ -114,7 +114,7 @@ export const Contact = () => {
                   <input
                     {...field}
                     placeholder="Subject"
-                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-2 p-4 rounded-xl border font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm mb-3">{errors.subject.message}</p>
@@ -139,7 +139,7 @@ export const Contact = () => {
                   <textarea
                     {...field}
                     placeholder="Message"
-                    className="w-full mb-3 p-4 rounded-xl h-64 border resize-none font-robotoMono border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full mb-3 p-4 rounded-xl h-64 border resize-none font-robotoMono border-purple-500 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {errors.message && (
                     <p className="text-red-500 text-sm mb-3">{errors.message.message}</p>
@@ -176,9 +176,9 @@ export const Contact = () => {
             </h1>
           </div>
         </div>
-        <h1 className="mt-20 text-purple-700 text-center text-xl font-semibold">
+        {/* <h1 className="md:mt-20 mt-4 md:mb-0 mb-10 text-purple-700 text-center md:text-xl text-base font-semibold">
           Made by Pritam Kumar Samaddar with ❤️
-        </h1>
+        </h1> */}
       </ScrollAnimation>
     </div>
   );

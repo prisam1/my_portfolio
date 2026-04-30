@@ -125,7 +125,7 @@ export const About = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-gray-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
+                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-purple-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
                     whileHover={{ scale: 1.1 }}
                   >
                     <span className="text-2xl">{item.icon}</span>
@@ -158,7 +158,7 @@ export const About = () => {
                 vision to life with precision and excellence!
               </h1>
 
-              <div className=" md:flex mt-10 items-center gap-2">
+              <div className="flex mt-10 items-center justify-between">
                 <button
                   onClick={() => window.open("/Pritam_Kumar_Samaddar_Full_Stack.pdf", "_blank")}
                   className="group relative flex items-center gap-2 px-6 py-3 bg-purple-500/10 border border-purple-500/50 text-purple-100 rounded-full transition-all duration-300 hover:bg-purple-500/20 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] active:scale-95"
@@ -172,6 +172,22 @@ export const About = () => {
                   {/* Subtle pulse effect in the background */}
                   <span className="absolute inset-0 rounded-full bg-purple-500/5 animate-pulse group-hover:hidden"></span>
                 </button>
+
+                 {/*Mobile Social Icons with animation and rounded background */}
+              <div className="md:hidden flex gap-4 justify-center items-center">
+                {socialMedia.map((item, index) => (
+                  <motion.a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-purple-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <span className="text-2xl">{item.icon}</span>
+                  </motion.a>
+                ))}
+              </div>
               </div>
             </div>
           </div>

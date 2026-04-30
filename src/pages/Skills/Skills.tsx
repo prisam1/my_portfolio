@@ -1,4 +1,3 @@
-import React from "react";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
 import StarryNetworkBackground from "../../components/StarBackground";
 import {
@@ -9,8 +8,8 @@ import {
   SiHtml5, SiPostgresql as SiSql, SiGit, SiGithub, SiApachekafka,
   SiElectron
 } from "react-icons/si";
-import { VscJson } from "react-icons/vsc"; // For NoSQL
-import { BiLogoPostgresql } from "react-icons/bi"; // For pgAdmin alternative
+import { VscJson } from "react-icons/vsc";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { Box, Code2, Feather } from 'lucide-react';
 
 interface Skill {
@@ -67,7 +66,7 @@ export const Skills = () => {
           <h1 className="text-white text-4xl md:text-5xl font-bold tracking-tight">
             Technical <span className="text-purple-500">Skills</span>
           </h1>
-          <div className="h-1 w-20 bg-purple-500 mx-auto mt-4 rounded-full opacity-50"></div>
+          {/* <div className="h-1 w-20 bg-purple-500 mx-auto mt-4 rounded-full opacity-50"></div> */}
         </div>
       </ScrollAnimation>
 
@@ -81,19 +80,18 @@ export const Skills = () => {
                   key={index}
                   className="group relative flex flex-col items-center justify-center p-4 h-28 md:h-36 rounded-2xl 
                  
-                  bg-transparent border-[1px] border-purple-400 transition-all duration-500 
+                  bg-transparent border-[1px] border-purple-500 transition-all duration-500 
                
                   hover:bg-purple-500/5 hover:border-purple-500/40 hover:-translate-y-2"
                 >
                   <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transition-all duration-300 group-hover:scale-110">
 
-                    <skill.Icon className={`text-3xl md:text-5xl ${skill.color} transition-all duration-500 
-            
+                    <skill.Icon className={`text-3xl md:text-5xl ${skill.color} transition-all duration-500    
             drop-shadow-[0_0_10px_rgba(255,255,255,0.2)] 
             group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]`}
                     />  </div>
 
-                  <span className="text-[10px] md:text-xs text-slate-400 font-medium mt-3 text-center transition-colors duration-300 group-hover:text-white">
+                  <span className="text-[10px] md:text-xs text-purple-500 font-medium mt-3 text-center transition-colors duration-300 group-hover:text-white">
                     {skill.name}
                   </span>
                 </div>

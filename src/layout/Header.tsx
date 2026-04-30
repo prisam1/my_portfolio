@@ -75,7 +75,7 @@ export const Header = () => {
       </div>
 
       {/* Mobile Nav Drawer */}
-      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex h-14 w-[calc(100%-2.2rem)] max-w-md items-center justify-between rounded-full border border-purple-800 bg-[#110F0E] px-6 shadow-lg md:hidden">  {navLinks.map(({ id, label, icon: IconComponent }) => (
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex h-14 w-[calc(100%-2rem)] max-w-md items-center justify-between rounded-full border border-purple-600 bg-[#110F0E] px-6 shadow-lg md:hidden">  {navLinks.map(({ id, label, icon: IconComponent }) => (
           <a
             key={id}
             href={`#${id}`}
