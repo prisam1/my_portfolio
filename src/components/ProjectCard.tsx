@@ -14,7 +14,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
         bg-transparent rounded-2xl group-hover:shadow-2xl
         transition-all duration-300 ease-in-out transform
         group-hover:-translate-y-2 group-hover:scale-[1.05]
-        px-5 py-5 flex flex-col items-center gap-4 border border-gray-700
+        px-5 py-5 flex flex-col items-center gap-4 border border-purple-700
         "
       >
         <img
@@ -35,7 +35,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
           {project.tech.slice(0, 5).map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-cyan-600/20 to-purple-600/20 border border-white/10 text-cyan-200 rounded-full transition-colors hover:border-cyan-500/50">
+              className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-cyan-600/20 to-purple-600/20 border border-purple-500 text-cyan-200 rounded-full transition-colors hover:border-cyan-500/50">
               {tech}
             </span>
           ))}
