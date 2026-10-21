@@ -1,47 +1,47 @@
-import { About } from "./pages/About/About";
+import { Toaster } from "sonner";
 import { Header } from "./layout/Header";
+import { Footer } from "./layout/Footer";
+import { StarField } from "./components/StarField";
 import { Intro } from "./pages/Intro/Intro";
-import { Experience } from "./pages/Experience/Experience";
-import { Contact } from "./pages/Contact/Contact";
+import { About } from "./pages/About/About";
 import { Skills } from "./pages/Skills/Skills";
+import { Experience } from "./pages/Experience/Experience";
 import { Work } from "./pages/Work/Work";
-import { Toaster } from 'sonner';
-// import { LightStrike } from "./components/LightStricke";
-
+import { Contact } from "./pages/Contact/Contact";
 
 function App() {
   return (
-    <div className="flex-col min-h-screen bg-gray-200">
-       <Header /> 
+    <div className="relative min-h-screen overflow-x-clip bg-[#030014] text-white">
+      <StarField />
+      <Header />
 
-      <section className="" id="home">
-        <Intro />
-      </section>
+      <main className="relative z-10">
+        <section id="home" aria-label="Introduction">
+          <Intro />
+        </section>
 
-      <section className="" id="about">
-        <About />
-      </section>
+        <section id="about" aria-label="About">
+          <About />
+        </section>
 
-      <section className="" id="skills">
-        <Skills />
-      </section>
+        <section id="skills" aria-label="Skills">
+          <Skills />
+        </section>
 
-      <section className="" id="experience">
-        <Experience />
-      </section>
+        <section id="experience" aria-label="Experience">
+          <Experience />
+        </section>
 
-      <section className="" id="work">
-        <Work />
-      </section>
+        <section id="work" aria-label="Projects">
+          <Work />
+        </section>
 
-      <section className="" id="contact">
-        <Contact />
-      </section>
+        <section id="contact" aria-label="Contact">
+          <Contact />
+        </section>
+      </main>
 
-      {/* <section className="" id="contact">
-      <LightStrike />
-      </section>
-       */}
+      <Footer />
       <Toaster position="top-center" richColors theme="dark" />
     </div>
   );

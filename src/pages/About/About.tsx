@@ -1,201 +1,103 @@
-
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { IMAGES } from "../../constants";
+import { Briefcase, Download, FolderGit2, Layers, Mail, MapPin } from "lucide-react";
+import { IMAGES, PROFILE, RESUME_URL, experience, projects } from "../../constants";
 import { ScrollAnimation } from "../../components/ScrollAnimation";
-import { Download, Github, Linkedin } from "lucide-react";
+import { SectionHeading } from "../../components/SectionHeading";
+import { SocialLinks } from "../../components/SocialLinks";
+import { skillCount } from "../../constants/skills";
 
-
-const socialMedia = [
-  {
-    icon: <Linkedin />,
-    link: "https://www.linkedin.com/in/pritam-kumar-samaddar-047a3074/",
-  },
-  { icon: <Github />, link: "https://github.com/prisam1" },
-
-]
+const stats = [
+  { label: "Companies", value: experience.length, Icon: Briefcase },
+  { label: "Projects", value: projects.length, Icon: FolderGit2 },
+  { label: "Technologies", value: skillCount, Icon: Layers },
+];
 
 export const About = () => {
-
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    let stars = Array.from({ length: 150 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      r: Math.random() * 1.5,
-      dx: Math.random() * 0.5,
-    }));
-
-    let shootingStars = Array.from({ length: 3 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      length: Math.random() * 80 + 100,
-      speed: Math.random() * 10 + 6,
-      active: false,
-    }));
-
-    const animate = () => {
-      ctx.fillStyle = "#030014";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = "white";
-      for (const star of stars) {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.r, 0, 2 * Math.PI);
-        ctx.fill();
-
-        star.x += star.dx;
-        if (star.x > canvas.width) star.x = 0;
-      }
-
-      for (const s of shootingStars) {
-        if (!s.active && Math.random() < 0.005) {
-          s.x = Math.random() * canvas.width;
-          s.y = Math.random() * canvas.height / 2;
-          s.active = true;
-        }
-
-        if (s.active) {
-          ctx.strokeStyle = "white";
-          ctx.lineWidth = 2;
-          ctx.beginPath();
-          ctx.moveTo(s.x, s.y);
-          ctx.lineTo(s.x - s.length, s.y + s.length);
-          ctx.stroke();
-
-          s.x += s.speed;
-          s.y -= s.speed;
-
-          if (s.x > canvas.width || s.y < 0) s.active = false;
-        }
-      }
-
-      requestAnimationFrame(animate);
-    };
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    animate();
-
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-
   return (
-    <div className="flex min-h-screen h-full justify-center items-center px-4">
-      <canvas ref={canvasRef} className="absolute z-0 min-h-screen h-full w-full" />
-      <motion.div
-        className="relative z-10 text-white flex flex-col"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-      >
+    <div className="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
+      <SectionHeading eyebrow="Get to know me" title={<>About <span className="text-purple-500">Me</span></>} />
 
-        <ScrollAnimation direction="up">
-          <h1 className="lg:text-4xl text-center font-bold mb-12">
-            About Me
-          </h1>
+      <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[auto_minmax(0,1fr)] md:gap-16">
+        <ScrollAnimation direction="left" className="hidden flex-col items-center md:flex">
+          <div className="relative">
+            <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-purple-600/50 to-cyan-500/40 blur-2xl" aria-hidden="true" />
+            <img
+              src={IMAGES.pritam}
+              alt={PROFILE.name}
+              width={270}
+              height={270}
+              loading="lazy"
+              decoding="async"
+              className="relative h-56 w-56 rounded-full border-2 border-purple-600 bg-white object-cover lg:h-[270px] lg:w-[270px]"
+            />
+          </div>
+          <SocialLinks className="mt-10" />
+        </ScrollAnimation>
 
-          <div className="flex flex-row gap-24 items-center">
-            <div className="hidden md:block">
-              <img
-                src={IMAGES.pritam}
-                alt="pritam"
-                className="lg:w-[270px] lg:h-[270px] w-[100px] h-[100px] mt-[50px] lg:mt-0 bg-white rounded-full border-2 border-purple-600"
-              />
+        <ScrollAnimation direction="right" className="text-white">
+          <h3 className="text-2xl font-bold sm:text-3xl">I'm {PROFILE.name}</h3>
+          <p className="mt-1 text-lg font-semibold text-purple-500">{PROFILE.title}</p>
 
-              {/* Social Icons with animation and rounded background */}
-              <div className="flex gap-4 justify-center items-center mt-12">
-                {socialMedia.map((item, index) => (
-                  <motion.a
-                    key={index}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-purple-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <span className="text-2xl">{item.icon}</span>
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-            <div className="max-w-2xl">
-              <h1 className="lg:text-2xl lg:mt-2 mt-6 font-bold">
-                I'm Pritam Kumar Samaddar
-              </h1>
-              <h1 className="lg:text-lg lg:mt-2 font-bold text-purple-600">
-                Full Stack Developer
-              </h1>
-              <h1 className="lg:mt-10 mt-4 font-sans lg:text-lg md:text-xs lg:font-semibold">
-                I am a passionate and results-driven full-stack developer with
-                expertise in modern technologies, including MERN (MongoDB, Express.js,
-                React, Node.js), Nest.js, Next.js, and React Native, paired with Expo
-                for seamless cross-platform mobile development. My skill set extends
-                to building dynamic web and mobile solutions using Ionic, leveraging
-                Firebase for real-time capabilities, and designing scalable and
-                efficient backend architectures with Redis and PostgreSQL. With a keen
-                eye for aesthetics and responsiveness, I utilize Tailwind CSS to craft
-                visually stunning user interfaces, enhanced by the power of TypeScript
-                for type-safe, robust applications. I am adept at cloud management
-                with AWS S3, version control with Git, and delivering optimized,
-                scalable solutions. Whether it’s creating innovative applications or
-                streamlining existing systems, I am committed to transforming ideas
-                into impactful digital experiences. Let’s collaborate to bring your
-                vision to life with precision and excellence!
-              </h1>
-
-              <div className="flex mt-10 items-center justify-between">
-                <button
-                  onClick={() => window.open("/Pritam_Kumar_Samaddar_Full_Stack.pdf", "_blank")}
-                  className="group relative flex items-center gap-2 px-6 py-3 bg-purple-500/10 border border-purple-500/50 text-purple-100 rounded-full transition-all duration-300 hover:bg-purple-500/20 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] active:scale-95"
-                >
-                  <Download
-                    size={18}
-                    className="transition-transform duration-300 group-hover:-translate-y-1 animate-bounce"
-                  />
-                  <span className="font-semibold tracking-wide">Resume</span>
-
-                  {/* Subtle pulse effect in the background */}
-                  <span className="absolute inset-0 rounded-full bg-purple-500/5 animate-pulse group-hover:hidden"></span>
-                </button>
-
-                 {/*Mobile Social Icons with animation and rounded background */}
-              <div className="md:hidden flex gap-4 justify-center items-center">
-                {socialMedia.map((item, index) => (
-                  <motion.a
-                    key={index}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 flex flex-row items-center justify-center rounded-full border border-purple-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <span className="text-2xl">{item.icon}</span>
-                  </motion.a>
-                ))}
-              </div>
-              </div>
-            </div>
+          <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-gray-300 sm:text-base lg:text-lg">
+            <p>
+              I am a passionate and results-driven full-stack developer with expertise in modern
+              technologies, including MERN (MongoDB, Express.js, React, Node.js), Nest.js, Next.js, and
+              React Native, paired with Expo for seamless cross-platform mobile development.
+            </p>
+            <p>
+              My skill set extends to building dynamic web and mobile solutions using Ionic, leveraging
+              Firebase for real-time capabilities, and designing scalable and efficient backend
+              architectures with Redis and PostgreSQL. With a keen eye for aesthetics and responsiveness,
+              I use Tailwind CSS to craft visually stunning interfaces, backed by TypeScript for
+              type-safe, robust applications.
+            </p>
+            <p>
+              I am adept at cloud management with AWS S3, version control with Git, and delivering
+              optimized, scalable solutions. Whether it’s creating innovative applications or
+              streamlining existing systems, I am committed to transforming ideas into impactful digital
+              experiences. Let’s collaborate to bring your vision to life!
+            </p>
           </div>
 
+          <ul className="mt-6 flex flex-col gap-2 text-sm text-gray-300 sm:flex-row sm:flex-wrap sm:gap-x-6">
+            <li className="flex items-center gap-2">
+              <MapPin size={16} className="shrink-0 text-purple-400" />
+              {PROFILE.location}
+            </li>
+            <li className="flex min-w-0 items-center gap-2">
+              <Mail size={16} className="shrink-0 text-purple-400" />
+              <a href={`mailto:${PROFILE.email}`} className="truncate transition-colors hover:text-purple-400">
+                {PROFILE.email}
+              </a>
+            </li>
+          </ul>
+
+          <ul className="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
+            {stats.map(({ label, value, Icon }) => (
+              <li
+                key={label}
+                className="rounded-2xl border border-purple-700/60 bg-purple-500/5 p-3 text-center transition-colors hover:border-purple-500 sm:p-4"
+              >
+                <Icon size={18} className="mx-auto mb-2 text-purple-400" aria-hidden="true" />
+                <p className="font-display text-2xl font-bold text-white sm:text-3xl">{value}+</p>
+                <p className="text-[11px] uppercase tracking-wider text-gray-400 sm:text-xs">{label}</p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex items-center gap-2 rounded-full border border-purple-500/50 bg-purple-500/10 px-6 py-3 text-purple-100 transition-all duration-300 hover:border-purple-400 hover:bg-purple-500/20 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] active:scale-95"
+            >
+              <Download size={18} className="transition-transform duration-300 group-hover:-translate-y-1" />
+              <span className="font-semibold tracking-wide">Download Resume</span>
+            </a>
+            <SocialLinks className="md:hidden" />
+          </div>
         </ScrollAnimation>
-      </motion.div>
+      </div>
     </div>
-
-
   );
 };
