@@ -1,42 +1,36 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import { useInView } from "react-intersection-observer";
+import { cn } from "../lib/utils";
 
 interface ScrollAnimationProps {
   children: ReactNode;
   direction?: "left" | "right" | "up" | "down";
+  /** delay in milliseconds */
   delay?: number;
+  className?: string;
 }
 
+/** Reveals children once when they scroll into view. CSS-driven; see `.reveal` in index.css. */
 export const ScrollAnimation = ({
   children,
   direction = "up",
   delay = 0,
+  className,
 }: ScrollAnimationProps) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
-
-  const variants = {
-    hidden: {
-      opacity: 0,
-      x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: { duration: 1, delay },
-    },
-  };
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: "0px 0px -8% 0px",
+    // Browsers without IntersectionObserver just show the content
+    fallbackInView: true,
+  });
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={variants}
+      className={cn("reveal", `reveal-${direction}`, inView && "is-visible", className)}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };

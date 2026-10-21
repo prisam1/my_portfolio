@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2017",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -8,19 +8,13 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "module": "ESNext",
-    "ignoreDeprecations": "6.0",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "typeRoots": ["./types", "./node_modules/@types"]
-    // "baseUrl": ".",
-    // "paths": {
-    //   "@/*": ["./*"]
-    // }
-    // "types": ["react", "react-dom"]
+    "jsx": "react-jsx"
   },
   "include": ["src"]
 }
