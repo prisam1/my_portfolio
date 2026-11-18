@@ -135,7 +135,9 @@ export const Intro = () => {
 
         <div className="my-6 flex min-h-[2.5rem] flex-wrap items-center justify-center gap-x-2 text-lg font-semibold drop-shadow-[0_2px_8px_rgba(3,0,20,0.5)] sm:text-2xl lg:text-4xl">
           <span className="text-white">I am a</span>
-          <span className="text-purple-700 [&_.Typewriter__cursor]:text-white">
+          {/* Dark chip keeps the role readable over both the light sky and the darker clouds */}
+          <span className="rounded-lg bg-[#030014]/70 px-3 py-0.5 text-purple-300 backdrop-blur-sm [&_.Typewriter__cursor]:text-purple-300">
+
             <Typewriter options={{ strings: roles, autoStart: true, loop: true, deleteSpeed: 10 }} />
           </span>
         </div>
